@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Herizon Cars component study by Abel Hechavarria: shared buttons, marquees and a keyboard-friendly gallery.">
+  <title>Herizon Cars — Component study</title>
+  <link rel="stylesheet" href="../../../dist/assets/button-styles-QTF3jkAW.css"><link rel="stylesheet" href="../../../dist/assets/widget-styles-CcS8AByI.css"><link rel="stylesheet" href="demo.css">
+  <script type="module" src="../../../dist/assets/widgets-C_MleJWE.js"></script><script type="module" src="demo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#components">Skip to components</a>
+  <header class="site-header shell"><a class="brand" href="#top">H<span>HERIZON CARS<small>COMPONENT STUDY</small></span></a><nav aria-label="Main"><a href="#components">Components</a><a href="../architecture.md">Architecture ↗</a></nav></header>
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div><p class="eyebrow"><span class="status-dot"></span> WordPress architecture / Abel Hechavarria</p><h1 id="hero-title">Built for editors.<br><span>Engineered to extend.</span></h1><p class="hero-copy">A considered theme layer for a client website. Shared components, native controls and a foundation that can grow.</p><div class="hero-notes"><span>01 / Modular PHP</span><span>02 / Shared styles</span><span>03 / Progressive enhancement</span></div></div>
+      <aside class="system-card" aria-label="Component overview"><div class="system-card__top"><span>HC / SYSTEM 01</span><span class="system-tag">LOCAL COMPONENT DEMO</span></div><div class="system-mark" aria-hidden="true"><i></i><i></i><i></i></div><p>One component.<br><strong>Two editing experiences.</strong></p><div class="editor-pair"><span>Elementor</span><b>↔</b><span>Gutenberg</span></div><small>PHP render · SCSS contract · Responsive overrides</small></aside>
+    </section>
+    <section id="components" class="section shell" aria-labelledby="buttons-title"><div class="section-heading"><div><p class="eyebrow">01 / A shared button system</p><h2 id="buttons-title">Three starting points.<br>Room to make them yours.</h2></div><p>Real theme markup and styles.<br>Same component, different presets.</p></div><div class="variant-grid" id="variant-grid"><article class="variant-card"><p class="eyebrow">Pill</p><div class="hc-button-wrap" style="--hc-button-duration:200ms;--hc-button-hover-move:3px"><a class="hc-button hc-button--pill" href="#gallery"><span class="hc-button__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span><span class="hc-button__label">Discover our approach</span></a></div></article><article class="variant-card"><p class="eyebrow">Outlined circle</p><div class="hc-button-wrap" style="--hc-button-duration:200ms;--hc-button-hover-move:3px"><a class="hc-button hc-button--outline" href="#gallery"><span class="hc-button__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span><span class="hc-button__label">Explore the collection</span></a></div></article><article class="variant-card"><p class="eyebrow">Filled circle</p><div class="hc-button-wrap" style="--hc-button-duration:200ms;--hc-button-hover-move:3px"><a class="hc-button hc-button--solid" href="#gallery"><span class="hc-button__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span><span class="hc-button__label">View the process</span></a></div></article></div>
+      <div class="playground"><div class="playground-copy"><p class="eyebrow">Try the component</p><h3>A small change.<br>A consistent result.</h3><p>Choose a variant and icon. Hover or tab to the link to inspect its states.</p></div><div class="playground-main"><div id="live-preview"><div class="hc-button-wrap" style="--hc-button-duration:200ms;--hc-button-hover-move:3px"><a class="hc-button hc-button--pill" href="#gallery"><span class="hc-button__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span><span class="hc-button__label">Make it your own</span></a></div></div><div class="demo-controls"><label>Variant<select id="variant-select"><option value="pill">Pill</option><option value="outline">Outlined circle</option><option value="solid">Filled circle</option></select></label><label>Icon<select id="icon-select"><option value="play">Play</option><option value="house">House</option><option value="carrot">Carrot</option><option value="none">Hidden</option></select></label><label>Position<select id="position-select"><option value="left">Left</option><option value="right">Right</option></select></label></div><p class="demo-note">The preview controls are demo-only JavaScript. The theme's frontend button uses CSS for hover and focus.</p></div></div>
+    </section>
+    <section class="section shell logo-section" aria-labelledby="logos-title"><div class="section-heading compact"><div><p class="eyebrow">02 / Logo marquee</p><h2 id="logos-title">A continuous rhythm.</h2></div><p>Fictional marks, created for this demo.<br>Hover or focus a link to pause.</p></div>		<div class="elementor-widget-container">
+					        <div class="hc-logo-marquee hc-marquee hc-marquee--pause-hover hc-marquee--fade hc-marquee--grayscale" data-hc-logo-marquee>
+            <div class="hc-marquee__viewport"><div class="hc-marquee__track">
+                                    <div class="hc-marquee__group" data-hc-marquee-group >
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                                                    <a href="#gallery"  rel="noopener"><img class="hc-logo-marquee__image" src="media/mark-1.svg" alt="Fictional mark 1" loading="lazy" decoding="async"></a>
+                                                            </div>
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                                                    <a href="#gallery"  rel="noopener"><img class="hc-logo-marquee__image" src="media/mark-2.svg" alt="Fictional mark 2" loading="lazy" decoding="async"></a>
+                                                            </div>
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                                                    <a href="#gallery"  rel="noopener"><img class="hc-logo-marquee__image" src="media/mark-3.svg" alt="Fictional mark 3" loading="lazy" decoding="async"></a>
+                                                            </div>
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                                                    <a href="#gallery"  rel="noopener"><img class="hc-logo-marquee__image" src="media/mark-4.svg" alt="Fictional mark 4" loading="lazy" decoding="async"></a>
+                                                            </div>
+                                            </div>
+                                    <div class="hc-marquee__group" data-hc-marquee-group data-hc-marquee-duplicate aria-hidden="true" inert>
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                <img class="hc-logo-marquee__image" src="media/mark-1.svg" alt="Fictional mark 1" loading="lazy" decoding="async">                            </div>
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                <img class="hc-logo-marquee__image" src="media/mark-2.svg" alt="Fictional mark 2" loading="lazy" decoding="async">                            </div>
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                <img class="hc-logo-marquee__image" src="media/mark-3.svg" alt="Fictional mark 3" loading="lazy" decoding="async">                            </div>
+                                                    <div class="hc-marquee__item hc-logo-marquee__item">
+                                <img class="hc-logo-marquee__image" src="media/mark-4.svg" alt="Fictional mark 4" loading="lazy" decoding="async">                            </div>
+                                            </div>
+                            </div></div>
+        </div>
+        				</div>
+		</section>
+    <section class="text-band" aria-label="Text marquee demonstration">		<div class="elementor-widget-container">
+					        <div class="hc-text-marquee hc-marquee hc-marquee--pause-hover hc-marquee--fade" data-hc-text-marquee>
+            <div class="hc-marquee__viewport"><div class="hc-marquee__track">
+                                    <div class="hc-marquee__group" data-hc-marquee-group >
+                                                    <span class="hc-marquee__item hc-text-marquee__text">Thoughtful engineering</span>
+                            <span class="hc-text-marquee__separator" aria-hidden="true">✦</span>                                                    <span class="hc-marquee__item hc-text-marquee__text">Editable by design</span>
+                            <span class="hc-text-marquee__separator" aria-hidden="true">✦</span>                                            </div>
+                                    <div class="hc-marquee__group" data-hc-marquee-group data-hc-marquee-duplicate aria-hidden="true" inert>
+                                                    <span class="hc-marquee__item hc-text-marquee__text">Thoughtful engineering</span>
+                            <span class="hc-text-marquee__separator" aria-hidden="true">✦</span>                                                    <span class="hc-marquee__item hc-text-marquee__text">Editable by design</span>
+                            <span class="hc-text-marquee__separator" aria-hidden="true">✦</span>                                            </div>
+                            </div></div>
+                    <button type="button" class="hc-marquee__pause" data-hc-marquee-pause
+            data-label-pause="Pause animation"
+            data-label-play="Resume animation"
+            aria-pressed="false">Pause animation</button>
+                </div>
+        				</div>
+		</section>
+    <section id="gallery" class="section shell" aria-labelledby="gallery-title"><div class="section-heading"><div><p class="eyebrow">03 / Expandable gallery</p><h2 id="gallery-title">Space for the details.</h2></div><p>Original SVG studies, not client photography.<br>Try pointer, touch or arrow keys.</p></div>		<div class="elementor-widget-container">
+					        <div class="hc-gallery" data-hc-gallery
+            data-limit-desktop="3"
+            data-limit-tablet="3"
+            data-limit-mobile="3">
+                            <figure class="hc-gallery__item">
+                    <button class="hc-gallery__trigger" type="button" data-hc-gallery-trigger aria-expanded="false"
+                        aria-label="Original vehicle illustration 1"
+                        aria-describedby="hc-gallery-caption-1">
+                        <img class="hc-gallery__image" src="media/study-1.svg" alt="Original vehicle illustration 1" loading="lazy" decoding="async">                    </button>
+                    <figcaption class="hc-gallery__caption" id="hc-gallery-caption-1">01 / Composed</figcaption>                </figure>
+                            <figure class="hc-gallery__item">
+                    <button class="hc-gallery__trigger" type="button" data-hc-gallery-trigger aria-expanded="false"
+                        aria-label="Original vehicle illustration 2"
+                        aria-describedby="hc-gallery-caption-2">
+                        <img class="hc-gallery__image" src="media/study-2.svg" alt="Original vehicle illustration 2" loading="lazy" decoding="async">                    </button>
+                    <figcaption class="hc-gallery__caption" id="hc-gallery-caption-2">02 / Considered</figcaption>                </figure>
+                            <figure class="hc-gallery__item">
+                    <button class="hc-gallery__trigger" type="button" data-hc-gallery-trigger aria-expanded="false"
+                        aria-label="Original vehicle illustration 3"
+                        aria-describedby="hc-gallery-caption-3">
+                        <img class="hc-gallery__image" src="media/study-3.svg" alt="Original vehicle illustration 3" loading="lazy" decoding="async">                    </button>
+                    <figcaption class="hc-gallery__caption" id="hc-gallery-caption-3">03 / Connected</figcaption>                </figure>
+                    </div>
+        				</div>
+		</section>
+    <section class="closing shell"><p class="eyebrow">The implementation behind the interface</p><h2>Purposeful motion.<br>Predictable behavior.</h2><a href="../case-study.md">Read the engineering case study <span aria-hidden="true">↗</span></a><p>Optional effects and editor integrations are documented in the source. This static demo does not reproduce the complete WordPress website.</p></section>
+  </main>
+  <footer class="shell"><span>Herizon Cars / Component study</span><span>Abel Hechavarria · WordPress engineering</span><a href="../../../README.md">Project README ↗</a></footer>
+</body>
+</html>

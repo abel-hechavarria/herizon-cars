@@ -1,0 +1,11 @@
+node_modules/
+build/
+.cache/
+local/
+.env*
+*.log
+__pycache__/
+test-results/
+playwright-report/
+.DS_Store
+Thumbs.db

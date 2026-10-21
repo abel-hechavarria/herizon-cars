@@ -1,0 +1,11 @@
+// Global foundations and effects. Widget styles are a separate conditional entry.
+@use 'tokens';
+@use 'fluid-type';
+@use 'utilities';
+@use 'components/preloader';
+@use 'components/blur-bottom';
+@use 'components/mouse-cursor';
+@use 'components/smooth-scroll';
+@use 'components/back-to-top';
+@use 'components/sticky-cta';
+:where(body) { background-color: var(--hc-bg); }

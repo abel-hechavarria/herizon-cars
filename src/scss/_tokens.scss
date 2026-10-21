@@ -1,0 +1,9 @@
+// Elementor kit variables resolve on body; no kit ID is hardcoded.
+body {
+  --hc-bg: var(--e-global-color-hc_background, #101010);
+  --hc-text: var(--e-global-color-text, #D4D7DC);
+  --hc-accent: var(--e-global-color-accent, #1C89F6);
+  --hc-heading-font: var(--e-global-typography-primary-font-family, inherit);
+  --hc-body-font: var(--e-global-typography-text-font-family, inherit);
+  --hc-radius: 1.25rem;
+}

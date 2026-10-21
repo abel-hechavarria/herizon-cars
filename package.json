@@ -1,0 +1,28 @@
+{
+  "name": "herizon-cars-theme",
+  "private": true,
+  "version": "1.2.0",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/button-assets.mjs && vite build --watch",
+    "build": "node scripts/button-assets.mjs && vite build",
+    "lint": "node scripts/lint.mjs",
+    "test": "node scripts/test.mjs",
+    "package": "node scripts/package.mjs",
+    "release:check": "python scripts/release.py --check",
+    "release:notes": "python scripts/release.py --notes"
+  },
+  "dependencies": {
+    "gsap": "3.13.0",
+    "lenis": "1.3.23"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "6.7.2",
+    "sass": "1.105.1",
+    "vite": "7.3.6"
+  }
+}

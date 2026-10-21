@@ -1,0 +1,11 @@
+.hc-back-to-top { position: fixed; right: max(1.25rem, env(safe-area-inset-right)); bottom: max(1.25rem, env(safe-area-inset-bottom)); z-index: 9990; display: grid; place-items: center; inline-size: 3.25rem; block-size: 3.25rem; padding: 0; border: 0; border-radius: 50%; background: transparent; box-shadow: none; color: var(--hc-text); cursor: pointer; }
+.hc-back-to-top[hidden] { display: none; }
+.hc-back-to-top:hover { background: transparent; color: var(--hc-accent); }
+.hc-back-to-top:focus-visible { outline: 2px solid var(--hc-accent); outline-offset: 4px; }
+.hc-back-to-top svg { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; fill: none; }
+.hc-back-to-top [data-hc-progress] { stroke: currentColor; stroke-width: 2; fill: none; }
+.hc-back-to-top__arrow { font-size: 1.4rem; }
+@media (max-width: 767px) { .hc-back-to-top { display: none; } }
+
+.hc-back-to-top__icon { position: relative; inline-size: 1.4rem; block-size: 1.4rem; pointer-events: none; }
+.hc-back-to-top__icon svg { position: static; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }

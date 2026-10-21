@@ -1,0 +1,17 @@
+// Fluid typography remains opt-in on headings or native Elementor wrappers.
+$scales: (display: display, giant: giant, h1: h1, h2: h2, h3: h3, h4: h4, marquee: marquee, lead: lead, body-lg: body-lg, body: body, small: small, xs: xs);
+@each $name, $token in $scales {
+  .hc-text-#{$name}, .hc-text-#{$name} :is(.elementor-heading-title, p, h1, h2, h3, h4, h5, h6) { font-size: var(--hc-fs-#{$token}); }
+}
+.hc-text-display, .hc-text-giant { line-height: .94; text-wrap: balance; min-inline-size: 0; }
+.hc-text-label { font-size: var(--hc-fs-small); text-transform: uppercase; letter-spacing: .08em; }
+.hc-text-muted { opacity: .65; }
+.hc-text-display-container, .hc-text-giant-container { container-type: inline-size; }
+@supports (font-size: 1cqi) {
+  .hc-text-display-container .elementor-heading-title { font-size: clamp(2.375rem, 8cqi, 6.5rem); }
+  .hc-text-giant-container .elementor-heading-title { font-size: clamp(3rem, 10.7cqi, 8.25rem); }
+}
+.hc-image-rotate img, img.hc-image-rotate { animation: hc-image-rotation var(--hc-rotation-duration, 20s) linear infinite; }
+@keyframes hc-image-rotation { to { transform: rotate(1turn); } }
+@media (prefers-reduced-motion: reduce) { .hc-image-rotate img, img.hc-image-rotate { animation: none; } }
+.hc-sr-only { position: absolute; inline-size: 1px; block-size: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }

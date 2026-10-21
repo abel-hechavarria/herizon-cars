@@ -1,0 +1,33 @@
+// Adapted from Abel assets/scss/_fluid-type.scss. Same control points and values.
+// Sum bounded segments: max(two clamps) in the source incorrectly made the
+// tablet value the minimum below 768px. This keeps the intended mobile values.
+@use 'sass:math';
+$vp-mobile: 375;
+$vp-tablet: 768;
+$vp-desktop: 1440;
+@function fluid-2slope($mob, $tab, $desk) {
+  $slope1: math.div($tab - $mob, $vp-tablet - $vp-mobile);
+  $intercept1: $mob - $slope1 * $vp-mobile;
+  $slope2: math.div($desk - $tab, $vp-desktop - $vp-tablet);
+  $mob-rem: math.div($mob, 16) * 1rem;
+  $tab-rem: math.div($tab, 16) * 1rem;
+  $desk-rem: math.div($desk, 16) * 1rem;
+  $i1-rem: math.div($intercept1, 16) * 1rem;
+  $i2-rem: math.div(-$slope2 * $vp-tablet, 16) * 1rem;
+  $delta-rem: math.div($desk - $tab, 16) * 1rem;
+  @return clamp(#{$mob-rem}, calc(clamp(#{$mob-rem}, calc(#{$i1-rem} + #{$slope1 * 100}vw), #{$tab-rem}) + clamp(0rem, calc(#{$i2-rem} + #{$slope2 * 100}vw), #{$delta-rem})), #{$desk-rem});
+}
+body {
+  --hc-fs-marquee: #{fluid-2slope(64, 112, 180)};
+  --hc-fs-giant: #{fluid-2slope(48, 82, 132)};
+  --hc-fs-display: #{fluid-2slope(38, 62, 104)};
+  --hc-fs-h1: #{fluid-2slope(32, 48, 72)};
+  --hc-fs-h2: #{fluid-2slope(26, 38, 56)};
+  --hc-fs-h3: #{fluid-2slope(21, 28, 38)};
+  --hc-fs-h4: #{fluid-2slope(18, 22, 28)};
+  --hc-fs-body-lg: #{fluid-2slope(17, 19, 22)};
+  --hc-fs-lead: var(--hc-fs-body-lg);
+  --hc-fs-body: #{fluid-2slope(15, 16, 18)};
+  --hc-fs-small: #{fluid-2slope(13, 13, 14)};
+  --hc-fs-xs: #{fluid-2slope(11, 11, 12)};
+}

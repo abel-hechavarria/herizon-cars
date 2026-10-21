@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "herizon-cars/button",
+  "version": "1.0.0",
+  "title": "HCars Button",
+  "category": "design",
+  "icon": "button",
+  "description": "Three customizable button variants with optional icons.",
+  "textdomain": "herizon-cars",
+  "attributes": {
+    "variant": { "type": "string", "default": "pill" },
+    "text": { "type": "string", "default": "Button" },
+    "url": { "type": "string", "default": "" },
+    "newTab": { "type": "boolean", "default": false },
+    "rel": { "type": "string", "default": "" },
+    "ariaLabel": { "type": "string", "default": "" },
+    "iconEnabled": { "type": "boolean", "default": true },
+    "iconSource": { "type": "string", "default": "library" },
+    "icon": { "type": "string", "default": "fas:play" },
+    "iconId": { "type": "number", "default": 0 },
+    "iconPosition": { "type": "string", "default": "left" },
+    "iconContainer": { "type": "boolean", "default": true },
+    "duration": { "type": "number", "default": 200 },
+    "hoverMove": { "type": "number", "default": 3 },
+    "styles": { "type": "object", "default": {} }
+  },
+  "supports": { "html": false, "anchor": true, "customClassName": true },
+  "editorScript": "herizon-cars-button-editor",
+  "editorStyle": "herizon-cars-button",
+  "viewStyle": "herizon-cars-button",
+  "render": "file:./render.php"
+}

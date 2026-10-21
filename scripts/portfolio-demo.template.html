@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Herizon Cars component study by Abel Hechavarria: shared buttons, marquees and a keyboard-friendly gallery.">
+  <title>Herizon Cars — Component study</title>
+  <link rel="stylesheet" href="{{BUTTON_CSS}}"><link rel="stylesheet" href="{{WIDGET_CSS}}"><link rel="stylesheet" href="demo.css">
+  <script type="module" src="{{WIDGET_JS}}"></script><script type="module" src="demo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#components">Skip to components</a>
+  <header class="site-header shell"><a class="brand" href="#top">H<span>HERIZON CARS<small>COMPONENT STUDY</small></span></a><nav aria-label="Main"><a href="#components">Components</a><a href="../architecture.md">Architecture ↗</a></nav></header>
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div><p class="eyebrow"><span class="status-dot"></span> WordPress architecture / Abel Hechavarria</p><h1 id="hero-title">Built for editors.<br><span>Engineered to extend.</span></h1><p class="hero-copy">A considered theme layer for a client website. Shared components, native controls and a foundation that can grow.</p><div class="hero-notes"><span>01 / Modular PHP</span><span>02 / Shared styles</span><span>03 / Progressive enhancement</span></div></div>
+      <aside class="system-card" aria-label="Component overview"><div class="system-card__top"><span>HC / SYSTEM 01</span><span class="system-tag">LOCAL COMPONENT DEMO</span></div><div class="system-mark" aria-hidden="true"><i></i><i></i><i></i></div><p>One component.<br><strong>Two editing experiences.</strong></p><div class="editor-pair"><span>Elementor</span><b>↔</b><span>Gutenberg</span></div><small>PHP render · SCSS contract · Responsive overrides</small></aside>
+    </section>
+    <section id="components" class="section shell" aria-labelledby="buttons-title"><div class="section-heading"><div><p class="eyebrow">01 / A shared button system</p><h2 id="buttons-title">Three starting points.<br>Room to make them yours.</h2></div><p>Real theme markup and styles.<br>Same component, different presets.</p></div><div class="variant-grid" id="variant-grid">{{VARIANTS}}</div>
+      <div class="playground"><div class="playground-copy"><p class="eyebrow">Try the component</p><h3>A small change.<br>A consistent result.</h3><p>Choose a variant and icon. Hover or tab to the link to inspect its states.</p></div><div class="playground-main"><div id="live-preview">{{LIVE_BUTTON}}</div><div class="demo-controls"><label>Variant<select id="variant-select"><option value="pill">Pill</option><option value="outline">Outlined circle</option><option value="solid">Filled circle</option></select></label><label>Icon<select id="icon-select"><option value="play">Play</option><option value="house">House</option><option value="carrot">Carrot</option><option value="none">Hidden</option></select></label><label>Position<select id="position-select"><option value="left">Left</option><option value="right">Right</option></select></label></div><p class="demo-note">The preview controls are demo-only JavaScript. The theme's frontend button uses CSS for hover and focus.</p></div></div>
+    </section>
+    <section class="section shell logo-section" aria-labelledby="logos-title"><div class="section-heading compact"><div><p class="eyebrow">02 / Logo marquee</p><h2 id="logos-title">A continuous rhythm.</h2></div><p>Fictional marks, created for this demo.<br>Hover or focus a link to pause.</p></div>{{LOGOS}}</section>
+    <section class="text-band" aria-label="Text marquee demonstration">{{MARQUEE}}</section>
+    <section id="gallery" class="section shell" aria-labelledby="gallery-title"><div class="section-heading"><div><p class="eyebrow">03 / Expandable gallery</p><h2 id="gallery-title">Space for the details.</h2></div><p>Original SVG studies, not client photography.<br>Try pointer, touch or arrow keys.</p></div>{{GALLERY}}</section>
+    <section class="closing shell"><p class="eyebrow">The implementation behind the interface</p><h2>Purposeful motion.<br>Predictable behavior.</h2><a href="../case-study.md">Read the engineering case study <span aria-hidden="true">↗</span></a><p>Optional effects and editor integrations are documented in the source. This static demo does not reproduce the complete WordPress website.</p></section>
+  </main>
+  <footer class="shell"><span>Herizon Cars / Component study</span><span>Abel Hechavarria · WordPress engineering</span><a href="../../../README.md">Project README ↗</a></footer>
+</body>
+</html>

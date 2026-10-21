@@ -1,0 +1,14 @@
+// Abel's wave overlay: SVG continues the dark surface below the viewport.
+body.hc-is-loading { overflow: hidden; }
+.hc-preloader {
+  position: fixed; inset: 0; z-index: 2147483647; display: flex; align-items: center; justify-content: center; width: 100%; height: 100vh;
+  background: var(--hc-bg); color: var(--hc-text); pointer-events: auto;
+  &[hidden] { display: none; }
+  > svg { position: absolute; top: 100%; left: 0; width: 100%; height: 110vh; fill: var(--hc-bg); pointer-events: none; }
+  &__heading { position: relative; z-index: 1; width: 100%; padding-inline: 1.5rem; }
+  &__text { display: flex; flex-wrap: wrap; justify-content: center; gap: .05em; font-family: var(--hc-heading-font); font-size: clamp(1.375rem, 5vw, 4rem); font-weight: 300; letter-spacing: .25em; text-align: center; text-transform: uppercase; }
+  &__text span { display: inline-block; animation: hc-preloader-blink 1s ease infinite alternate; }
+  @for $i from 1 through 30 { &__text span:nth-child(#{$i}) { animation-delay: #{($i - 1) * .1}s; } }
+}
+@keyframes hc-preloader-blink { to { opacity: .08; } }
+@media (prefers-reduced-motion: reduce) { body.hc-is-loading { overflow: auto; } .hc-preloader { display: none; } }

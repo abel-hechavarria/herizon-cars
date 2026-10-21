@@ -1,0 +1,728 @@
+msgid ""
+msgstr "Project-Id-Version: Herizon Cars 1.1.0\nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
+
+msgid "Preloader"
+msgstr ""
+
+msgid "Bottom blur"
+msgstr ""
+
+msgid "Decorative cursor"
+msgstr ""
+
+msgid "Smooth scrolling"
+msgstr ""
+
+msgid "Back to top"
+msgstr ""
+
+msgid "Floating contact panel"
+msgstr ""
+
+msgid "Administrator SVG / SVGZ / JSON uploads"
+msgstr ""
+
+msgid "Same-host HTTPS normalization"
+msgstr ""
+
+msgid "Remove unused jQuery UI on front page"
+msgstr ""
+
+msgid "Optimized generated image sizes"
+msgstr ""
+
+msgid "Remove shortlinks"
+msgstr ""
+
+msgid "Prevent self pingbacks"
+msgstr ""
+
+msgid "Content and slug body classes"
+msgstr ""
+
+msgid "Disable native site icon output"
+msgstr ""
+
+msgid "Current year shortcodes"
+msgstr ""
+
+msgid "Contact us"
+msgstr ""
+
+msgid "Call"
+msgstr ""
+
+msgid "WhatsApp"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "How can we help you?"
+msgstr ""
+
+msgid "Loading"
+msgstr ""
+
+msgid "Phone number"
+msgstr ""
+
+msgid "WhatsApp number (international format)"
+msgstr ""
+
+msgid "Email address"
+msgstr ""
+
+msgid "Contact button label"
+msgstr ""
+
+msgid "Call label"
+msgstr ""
+
+msgid "WhatsApp label"
+msgstr ""
+
+msgid "Email label"
+msgstr ""
+
+msgid "Contact panel text"
+msgstr ""
+
+msgid "Hero selector"
+msgstr ""
+
+msgid "Footer selector"
+msgstr ""
+
+msgid "Sticky header selector"
+msgstr ""
+
+msgid "Modules"
+msgstr ""
+
+msgid "Enable modules"
+msgstr ""
+
+msgid "Contact and page references"
+msgstr ""
+
+msgid "The contact panel stays hidden until at least one valid contact channel is saved."
+msgstr ""
+
+msgid "Preloader text"
+msgstr ""
+
+msgid "Anchor offset (pixels)"
+msgstr ""
+
+msgid "Animation"
+msgstr ""
+
+msgid "Cycle duration (seconds)"
+msgstr ""
+
+msgid "Reverse direction"
+msgstr ""
+
+msgid "Pause on hover"
+msgstr ""
+
+msgid "Fade edges"
+msgstr ""
+
+msgid "Pause animation"
+msgstr ""
+
+msgid "Resume animation"
+msgstr ""
+
+msgid "Logo marquee"
+msgstr ""
+
+msgid "Logos"
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Alternative text"
+msgstr ""
+
+msgid "Link"
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Spacing"
+msgstr ""
+
+msgid "Logo height"
+msgstr ""
+
+msgid "Grayscale logos"
+msgstr ""
+
+msgid "Text marquee"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Texts"
+msgstr ""
+
+msgid "Separator"
+msgstr ""
+
+msgid "Band angle"
+msgstr ""
+
+msgid "Band padding"
+msgstr ""
+
+msgid "Text color"
+msgstr ""
+
+msgid "Separator color"
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "Expandable gallery"
+msgstr ""
+
+msgid "Images"
+msgstr ""
+
+msgid "Caption"
+msgstr ""
+
+msgid "Visible images"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Image height"
+msgstr ""
+
+msgid "Item width"
+msgstr ""
+
+msgid "Expanded width"
+msgstr ""
+
+msgid "Corner radius"
+msgstr ""
+
+msgid "Maximum width"
+msgstr ""
+
+msgid "Expand image %d"
+msgstr ""
+
+#: HCars Button
+msgid "100"
+msgstr ""
+
+#: HCars Button
+msgid "200"
+msgstr ""
+
+#: HCars Button
+msgid "300"
+msgstr ""
+
+#: HCars Button
+msgid "400"
+msgstr ""
+
+#: HCars Button
+msgid "500"
+msgstr ""
+
+#: HCars Button
+msgid "600"
+msgstr ""
+
+#: HCars Button
+msgid "700"
+msgstr ""
+
+#: HCars Button
+msgid "800"
+msgstr ""
+
+#: HCars Button
+msgid "900"
+msgstr ""
+
+#: HCars Button
+msgid "Accepts page links and anchors such as #contact."
+msgstr ""
+
+#: HCars Button
+msgid "Accessible label"
+msgstr ""
+
+#: HCars Button
+msgid "Alignment"
+msgstr ""
+
+#: HCars Button
+msgid "Auto"
+msgstr ""
+
+#: HCars Button
+msgid "Blue gradient"
+msgstr ""
+
+#: HCars Button
+msgid "Blur"
+msgstr ""
+
+#: HCars Button
+msgid "Bold"
+msgstr ""
+
+#: HCars Button
+msgid "Border color"
+msgstr ""
+
+#: HCars Button
+msgid "Border style"
+msgstr ""
+
+#: HCars Button
+msgid "Border width"
+msgstr ""
+
+#: HCars Button
+msgid "Button"
+msgstr ""
+
+#: HCars Button
+msgid "Button text"
+msgstr ""
+
+#: HCars Button
+msgid "Capitalize"
+msgstr ""
+
+#: HCars Button
+msgid "Center"
+msgstr ""
+
+#: HCars Button
+msgid "Choose SVG"
+msgstr ""
+
+#: HCars Button
+msgid "Choose a CSS length, such as 16px or 1rem."
+msgstr ""
+
+#: HCars Button
+msgid "Choose icon"
+msgstr ""
+
+#: HCars Button
+msgid "Close icon picker"
+msgstr ""
+
+#: HCars Button
+msgid "Content"
+msgstr ""
+
+#: HCars Button
+msgid "Custom"
+msgstr ""
+
+#: HCars Button
+msgid "Custom SVG"
+msgstr ""
+
+#: HCars Button
+msgid "Custom shadow"
+msgstr ""
+
+#: HCars Button
+msgid "Custom width"
+msgstr ""
+
+#: HCars Button
+msgid "Dashed"
+msgstr ""
+
+#: HCars Button
+msgid "Design"
+msgstr ""
+
+#: HCars Button
+msgid "Design and icon"
+msgstr ""
+
+#: HCars Button
+msgid "Desktop"
+msgstr ""
+
+#: HCars Button
+msgid "Device"
+msgstr ""
+
+#: HCars Button
+msgid "Dotted"
+msgstr ""
+
+#: HCars Button
+msgid "Double"
+msgstr ""
+
+#: HCars Button
+msgid "Empty overrides inherit from larger devices and the selected preset. Preview follows the device and state selected here."
+msgstr ""
+
+#: HCars Button
+msgid "Filled circle"
+msgstr ""
+
+#: HCars Button
+msgid "Fit content"
+msgstr ""
+
+#: HCars Button
+msgid "Font Awesome library"
+msgstr ""
+
+#: HCars Button
+msgid "Font family"
+msgstr ""
+
+#: HCars Button
+msgid "Font family names, for example Saira, sans-serif. Empty uses the preset."
+msgstr ""
+
+#: HCars Button
+msgid "Font size"
+msgstr ""
+
+#: HCars Button
+msgid "Font weight"
+msgstr ""
+
+#: HCars Button
+msgid "Full width"
+msgstr ""
+
+#: HCars Button
+msgid "HCars Button"
+msgstr ""
+
+#: HCars Button
+msgid "Horizontal offset"
+msgstr ""
+
+#: HCars Button
+msgid "Hover"
+msgstr ""
+
+#: HCars Button
+msgid "Hover / keyboard focus"
+msgstr ""
+
+#: HCars Button
+msgid "Hover movement (px)"
+msgstr ""
+
+#: HCars Button
+msgid "Icon"
+msgstr ""
+
+#: HCars Button
+msgid "Icon background"
+msgstr ""
+
+#: HCars Button
+msgid "Icon border color"
+msgstr ""
+
+#: HCars Button
+msgid "Icon border style"
+msgstr ""
+
+#: HCars Button
+msgid "Icon border width"
+msgstr ""
+
+#: HCars Button
+msgid "Icon color"
+msgstr ""
+
+#: HCars Button
+msgid "Icon container"
+msgstr ""
+
+#: HCars Button
+msgid "Icon container diameter"
+msgstr ""
+
+#: HCars Button
+msgid "Icon corner radius"
+msgstr ""
+
+#: HCars Button
+msgid "Icon hover movement (px)"
+msgstr ""
+
+#: HCars Button
+msgid "Icon library"
+msgstr ""
+
+#: HCars Button
+msgid "Icon padding"
+msgstr ""
+
+#: HCars Button
+msgid "Icon position"
+msgstr ""
+
+#: HCars Button
+msgid "Icon shadow"
+msgstr ""
+
+#: HCars Button
+msgid "Icon size"
+msgstr ""
+
+#: HCars Button
+msgid "Icon source"
+msgstr ""
+
+#: HCars Button
+msgid "Inherited:"
+msgstr ""
+
+#: HCars Button
+msgid "Left"
+msgstr ""
+
+#: HCars Button
+msgid "Letter spacing"
+msgstr ""
+
+#: HCars Button
+msgid "Line height"
+msgstr ""
+
+#: HCars Button
+msgid "Link URL"
+msgstr ""
+
+#: HCars Button
+msgid "Link rel"
+msgstr ""
+
+#: HCars Button
+msgid "Link relationship (rel)"
+msgstr ""
+
+#: HCars Button
+msgid "Local icon preview"
+msgstr ""
+
+#: HCars Button
+msgid "Lowercase"
+msgstr ""
+
+#: HCars Button
+msgid "Media library (SVG)"
+msgstr ""
+
+#: HCars Button
+msgid "Mobile — up to 767 px"
+msgstr ""
+
+#: HCars Button
+msgid "None"
+msgstr ""
+
+#: HCars Button
+msgid "Normal"
+msgstr ""
+
+#: HCars Button
+msgid "Normal and hover styles"
+msgstr ""
+
+#: HCars Button
+msgid "Open in a new tab"
+msgstr ""
+
+#: HCars Button
+msgid "Open in new tab"
+msgstr ""
+
+#: HCars Button
+msgid "Optional. Use only when the visible text does not describe the destination."
+msgstr ""
+
+#: HCars Button
+msgid "Outline"
+msgstr ""
+
+#: HCars Button
+msgid "Outlined circle"
+msgstr ""
+
+#: HCars Button
+msgid "Padding bottom"
+msgstr ""
+
+#: HCars Button
+msgid "Padding left"
+msgstr ""
+
+#: HCars Button
+msgid "Padding right"
+msgstr ""
+
+#: HCars Button
+msgid "Padding top"
+msgstr ""
+
+#: HCars Button
+msgid "Pill"
+msgstr ""
+
+#: HCars Button
+msgid "Play"
+msgstr ""
+
+#: HCars Button
+msgid "Preset"
+msgstr ""
+
+#: HCars Button
+msgid "Remove SVG"
+msgstr ""
+
+#: HCars Button
+msgid "Replace SVG"
+msgstr ""
+
+#: HCars Button
+msgid "Reset design overrides"
+msgstr ""
+
+#: HCars Button
+msgid "Reset style overrides"
+msgstr ""
+
+#: HCars Button
+msgid "Reset styles"
+msgstr ""
+
+#: HCars Button
+msgid "Right"
+msgstr ""
+
+#: HCars Button
+msgid "SVG icon"
+msgstr ""
+
+#: HCars Button
+msgid "Search icons"
+msgstr ""
+
+#: HCars Button
+msgid "Shadow"
+msgstr ""
+
+#: HCars Button
+msgid "Show icon"
+msgstr ""
+
+#: HCars Button
+msgid "Showing up to 60 matches. Refine the search for more icons."
+msgstr ""
+
+#: HCars Button
+msgid "Solid"
+msgstr ""
+
+#: HCars Button
+msgid "Spread"
+msgstr ""
+
+#: HCars Button
+msgid "State"
+msgstr ""
+
+#: HCars Button
+msgid "Tablet — up to 1024 px"
+msgstr ""
+
+#: HCars Button
+msgid "Text / icon spacing"
+msgstr ""
+
+#: HCars Button
+msgid "Text transformation"
+msgstr ""
+
+#: HCars Button
+msgid "The icon library could not be loaded. Your selected icon is preserved."
+msgstr ""
+
+#: HCars Button
+msgid "Transition duration (ms)"
+msgstr ""
+
+#: HCars Button
+msgid "Transparent"
+msgstr ""
+
+#: HCars Button
+msgid "URL"
+msgstr ""
+
+#: HCars Button
+msgid "Uppercase"
+msgstr ""
+
+#: HCars Button
+msgid "Use icon container"
+msgstr ""
+
+#: HCars Button
+msgid "Use inherited value"
+msgstr ""
+
+#: HCars Button
+msgid "Use the Elementor accent font"
+msgstr ""
+
+#: HCars Button
+msgid "Variant"
+msgstr ""
+
+#: HCars Button
+msgid "Vertical offset"
+msgstr ""
+
+#: HCars Button
+msgid "Width"
+msgstr ""
+
+#: HCars Button
+msgid "Width: auto, 100% or length"
+msgstr ""
+
+# HCars Button strings maintained by button-translations.py
+msgid "Use preset / inherit"
+msgstr ""
+
+# HCars Button strings maintained by button-translations.py
+msgid "Three customizable button variants with optional icons."
+msgstr ""

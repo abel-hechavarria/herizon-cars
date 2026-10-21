@@ -1,0 +1,95 @@
+// Shared frontend/editor presentation. Presets are generated from button-schema.json.
+@use '../button-presets';
+$fields: text-color, background, border-color, border-width, border-style, radius, shadow, padding-top, padding-right, padding-bottom, padding-left, gap, font-family, font-size, font-weight, line-height, letter-spacing, text-transform, width, align, icon-color, icon-background, icon-size, icon-diameter, icon-padding, icon-border-color, icon-border-width, icon-border-style, icon-radius, icon-shadow;
+
+// Resolve on the anchor where preset variables live, rather than on an ancestor.
+@function normal-value($field, $breakpoint: desktop) {
+  $desktop: var(--hc-button-#{$field}, var(--hc-button-preset-#{$field}));
+  @if $breakpoint == tablet { @return var(--hc-button-tablet-#{$field}, #{$desktop}); }
+  @if $breakpoint == mobile { @return var(--hc-button-mobile-#{$field}, var(--hc-button-tablet-#{$field}, #{$desktop})); }
+  @return $desktop;
+}
+@function hover-value($field, $breakpoint: desktop) {
+  $base: var(--hc-button-hover-#{$field}, var(--hc-button-preset-hover-#{$field}, #{normal-value($field, $breakpoint)}));
+  @if $breakpoint == tablet { @return var(--hc-button-tablet-hover-#{$field}, #{$base}); }
+  @if $breakpoint == mobile { @return var(--hc-button-mobile-hover-#{$field}, var(--hc-button-tablet-hover-#{$field}, #{$base})); }
+  @return $base;
+}
+@mixin effective($breakpoint: desktop, $hover: false) {
+  @each $field in $fields {
+    @if $hover { --hc-button-effective-#{$field}: #{hover-value($field, $breakpoint)}; }
+    @else { --hc-button-effective-#{$field}: #{normal-value($field, $breakpoint)}; }
+  }
+}
+.hc-button-wrap {
+  display: flex; width: 100%; justify-content: var(--hc-button-align, flex-start);
+  --hc-button-duration: 200ms;
+  --hc-button-hover-move: 3px;
+}
+.hc-button {
+  @include effective;
+  box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--hc-button-effective-gap, 12px); width: var(--hc-button-effective-width, auto); max-width: 100%;
+  padding: var(--hc-button-effective-padding-top, 8px) var(--hc-button-effective-padding-right, 8px) var(--hc-button-effective-padding-bottom, 8px) var(--hc-button-effective-padding-left, 24px);
+  color: var(--hc-button-effective-text-color, #fff); background: var(--hc-button-effective-background, #81B3F5);
+  border-width: var(--hc-button-effective-border-width, 0); border-style: var(--hc-button-effective-border-style, solid); border-color: var(--hc-button-effective-border-color, transparent);
+  border-radius: var(--hc-button-effective-radius, 100px); box-shadow: var(--hc-button-effective-shadow, none);
+  font-family: var(--hc-button-effective-font-family, inherit); font-size: var(--hc-button-effective-font-size, 16px); font-weight: var(--hc-button-effective-font-weight, 500); line-height: var(--hc-button-effective-line-height, 1.2); letter-spacing: var(--hc-button-effective-letter-spacing, 0); text-transform: var(--hc-button-effective-text-transform, none);
+  text-decoration: none; cursor: pointer; vertical-align: middle;
+  transition: color var(--hc-button-duration) ease, background var(--hc-button-duration) ease, border-color var(--hc-button-duration) ease, border-radius var(--hc-button-duration) ease, box-shadow var(--hc-button-duration) ease;
+  &--icon-right { flex-direction: row-reverse; }
+  &__label { display: block; min-width: 0; color: inherit; overflow-wrap: anywhere; }
+  &__icon {
+    box-sizing: border-box; display: inline-flex; flex-shrink: 0; align-items: center; justify-content: center;
+    width: var(--hc-button-effective-icon-diameter, 40px); height: var(--hc-button-effective-icon-diameter, 40px); padding: var(--hc-button-effective-icon-padding, 0);
+    color: var(--hc-button-effective-icon-color, #81B3F5); background: var(--hc-button-effective-icon-background, #101010);
+    border-width: var(--hc-button-effective-icon-border-width, 0); border-style: var(--hc-button-effective-icon-border-style, solid); border-color: var(--hc-button-effective-icon-border-color, transparent);
+    border-radius: var(--hc-button-effective-icon-radius, 50%); box-shadow: var(--hc-button-effective-icon-shadow, none);
+    transition: translate var(--hc-button-duration) ease, color var(--hc-button-duration) ease, background var(--hc-button-duration) ease, border-color var(--hc-button-duration) ease, border-radius var(--hc-button-duration) ease, box-shadow var(--hc-button-duration) ease;
+    svg, img, .hc-button__media-icon { display: block; width: var(--hc-button-effective-icon-size, 12px); height: var(--hc-button-effective-icon-size, 12px); max-width: 100%; max-height: 100%; object-fit: contain; }
+    .hc-button__media-icon { background: currentColor; mask-size: contain; mask-position: center; mask-repeat: no-repeat; }
+    svg { fill: currentColor; }
+  }
+  &--no-icon-container &__icon { width: var(--hc-button-effective-icon-size, 12px); height: var(--hc-button-effective-icon-size, 12px); padding: 0; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+  &:focus-visible { outline: 2px solid var(--hc-accent, #81B3F5); outline-offset: 4px; }
+}
+@media (max-width: 1024px) {
+  .hc-button { @include effective(tablet); }
+  .hc-button-wrap { justify-content: var(--hc-button-tablet-align, var(--hc-button-align, flex-start)); }
+}
+@media (max-width: 767px) {
+  .hc-button { @include effective(mobile); }
+  .hc-button-wrap { justify-content: var(--hc-button-mobile-align, var(--hc-button-tablet-align, var(--hc-button-align, flex-start))); }
+}
+.hc-button:is(:hover, :focus-visible) { @include effective(desktop, true); }
+.hc-button:is(:hover, :focus-visible) .hc-button__icon { translate: var(--hc-button-hover-move) 0; }
+.hc-button-wrap:has(.hc-button:is(:hover, :focus-visible)) { justify-content: var(--hc-button-hover-align, var(--hc-button-align, flex-start)); }
+@media (max-width: 1024px) {
+  .hc-button:is(:hover, :focus-visible) { @include effective(tablet, true); }
+  .hc-button-wrap:has(.hc-button:is(:hover, :focus-visible)) { justify-content: var(--hc-button-tablet-hover-align, var(--hc-button-hover-align, var(--hc-button-tablet-align, var(--hc-button-align, flex-start)))); }
+}
+@media (max-width: 767px) {
+  .hc-button:is(:hover, :focus-visible) { @include effective(mobile, true); }
+  .hc-button-wrap:has(.hc-button:is(:hover, :focus-visible)) { justify-content: var(--hc-button-mobile-hover-align, var(--hc-button-tablet-hover-align, var(--hc-button-hover-align, var(--hc-button-mobile-align, var(--hc-button-tablet-align, var(--hc-button-align, flex-start)))))); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hc-button, .hc-button .hc-button__icon { transition: none; }
+  .hc-button:is(:hover, :focus-visible) .hc-button__icon { translate: none; }
+}
+// Gutenberg canvas preview uses the exact shared CSS while blocking navigation.
+.editor-styles-wrapper .hc-button-wrap { margin-block: 0; }
+.editor-styles-wrapper .hc-button-editor-preview { background: var(--hc-bg, #101010); padding: 16px; box-sizing: border-box; }
+
+// Inspector device/state switches preview without changing the editor viewport.
+@each $device in desktop, tablet, mobile {
+  .editor-styles-wrapper .hc-button-preview--#{$device} .hc-button {
+    @include effective($device);
+    &[data-hc-preview-state='hover'] { @include effective($device, true); }
+  }
+}
+.editor-styles-wrapper .hc-button[data-hc-preview-state='normal'] .hc-button__icon { translate: none; }
+.editor-styles-wrapper .hc-button[data-hc-preview-state='hover'] .hc-button__icon { translate: var(--hc-button-hover-move) 0; }
+@media (prefers-reduced-motion: reduce) { .editor-styles-wrapper .hc-button[data-hc-preview-state] .hc-button__icon { translate: none; } }
+
+// Preserve component link colors against Hello Elementor's a:hover defaults.
+a.hc-button:is(:hover, :focus-visible) { color: var(--hc-button-effective-text-color, #fff); text-decoration: none; }

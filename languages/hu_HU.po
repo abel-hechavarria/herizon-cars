@@ -1,0 +1,602 @@
+msgid ""
+msgstr "Project-Id-Version: Herizon Cars 1.1.0\nLanguage: hu_HU\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Preloader"
+msgstr "Betöltőképernyő"
+
+msgid "Bottom blur"
+msgstr "Alsó elmosás"
+
+msgid "Decorative cursor"
+msgstr "Dekoratív kurzor"
+
+msgid "Smooth scrolling"
+msgstr "Finom görgetés"
+
+msgid "Back to top"
+msgstr "Vissza az oldal tetejére"
+
+msgid "Floating contact panel"
+msgstr "Lebegő kapcsolatpanel"
+
+msgid "Administrator SVG / SVGZ / JSON uploads"
+msgstr "SVG / SVGZ / JSON feltöltés rendszergazdáknak"
+
+msgid "Same-host HTTPS normalization"
+msgstr "Azonos domain HTTPS-normalizálása"
+
+msgid "Remove unused jQuery UI on front page"
+msgstr "Nem használt jQuery UI eltávolítása a kezdőlapról"
+
+msgid "Optimized generated image sizes"
+msgstr "Optimalizált képméretek"
+
+msgid "Remove shortlinks"
+msgstr "Rövid hivatkozások eltávolítása"
+
+msgid "Prevent self pingbacks"
+msgstr "Saját pingbackek megakadályozása"
+
+msgid "Content and slug body classes"
+msgstr "Tartalomtípus- és keresőbarát névosztályok"
+
+msgid "Disable native site icon output"
+msgstr "WordPress webhelyikon kikapcsolása"
+
+msgid "Current year shortcodes"
+msgstr "Aktuális év rövidkódjai"
+
+msgid "Contact us"
+msgstr "Kapcsolat"
+
+msgid "Call"
+msgstr "Hívás"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "How can we help you?"
+msgstr "Miben segíthetünk?"
+
+msgid "Loading"
+msgstr "Betöltés"
+
+msgid "Phone number"
+msgstr "Telefonszám"
+
+msgid "WhatsApp number (international format)"
+msgstr "WhatsApp-szám (nemzetközi formátum)"
+
+msgid "Email address"
+msgstr "E-mail-cím"
+
+msgid "Contact button label"
+msgstr "Kapcsolatgomb felirata"
+
+msgid "Call label"
+msgstr "Hívás felirata"
+
+msgid "WhatsApp label"
+msgstr "WhatsApp felirata"
+
+msgid "Email label"
+msgstr "E-mail felirata"
+
+msgid "Contact panel text"
+msgstr "Kapcsolatpanel szövege"
+
+msgid "Hero selector"
+msgstr "Nyitószakasz CSS-szelektora"
+
+msgid "Footer selector"
+msgstr "Lábléc CSS-szelektora"
+
+msgid "Sticky header selector"
+msgstr "Rögzített fejléc CSS-szelektora"
+
+msgid "Modules"
+msgstr "Modulok"
+
+msgid "Enable modules"
+msgstr "Modulok engedélyezése"
+
+msgid "Contact and page references"
+msgstr "Kapcsolat és oldalszakaszok"
+
+msgid "The contact panel stays hidden until at least one valid contact channel is saved."
+msgstr "A kapcsolatpanel rejtve marad, amíg legalább egy érvényes elérhetőséget el nem ment."
+
+msgid "Preloader text"
+msgstr "Betöltőképernyő szövege"
+
+msgid "Anchor offset (pixels)"
+msgstr "Horgonyeltolás (képpont)"
+
+msgid "Animation"
+msgstr "Animáció"
+
+msgid "Cycle duration (seconds)"
+msgstr "Ciklus időtartama (másodperc)"
+
+msgid "Reverse direction"
+msgstr "Fordított irány"
+
+msgid "Pause on hover"
+msgstr "Szüneteltetés az egérmutató alatt"
+
+msgid "Fade edges"
+msgstr "Elhalványuló szélek"
+
+msgid "Pause animation"
+msgstr "Animáció szüneteltetése"
+
+msgid "Resume animation"
+msgstr "Animáció folytatása"
+
+msgid "Logo marquee"
+msgstr "Végtelen logósor"
+
+msgid "Logos"
+msgstr "Logók"
+
+msgid "Image"
+msgstr "Kép"
+
+msgid "Alternative text"
+msgstr "Alternatív szöveg"
+
+msgid "Link"
+msgstr "Hivatkozás"
+
+msgid "Style"
+msgstr "Stílus"
+
+msgid "Spacing"
+msgstr "Térköz"
+
+msgid "Logo height"
+msgstr "Logómagasság"
+
+msgid "Grayscale logos"
+msgstr "Szürkeárnyalatos logók"
+
+msgid "Text marquee"
+msgstr "Folyamatos szövegsor"
+
+msgid "Text"
+msgstr "Szöveg"
+
+msgid "Texts"
+msgstr "Szövegek"
+
+msgid "Separator"
+msgstr "Elválasztó"
+
+msgid "Band angle"
+msgstr "Sáv dőlésszöge"
+
+msgid "Band padding"
+msgstr "Sáv belső margója"
+
+msgid "Text color"
+msgstr "Szöveg színe"
+
+msgid "Separator color"
+msgstr "Elválasztó színe"
+
+msgid "Background"
+msgstr "Háttér"
+
+msgid "Expandable gallery"
+msgstr "Kibontható galéria"
+
+msgid "Images"
+msgstr "Képek"
+
+msgid "Caption"
+msgstr "Képaláírás"
+
+msgid "Visible images"
+msgstr "Látható képek"
+
+msgid "Layout"
+msgstr "Elrendezés"
+
+msgid "Image height"
+msgstr "Képmagasság"
+
+msgid "Item width"
+msgstr "Elem szélessége"
+
+msgid "Expanded width"
+msgstr "Kibontott szélesség"
+
+msgid "Corner radius"
+msgstr "Sarok lekerekítése"
+
+msgid "Maximum width"
+msgstr "Maximális szélesség"
+
+msgid "Expand image %d"
+msgstr "%d. kép kibontása"
+
+msgid "100"
+msgstr "100"
+
+msgid "200"
+msgstr "200"
+
+msgid "300"
+msgstr "300"
+
+msgid "400"
+msgstr "400"
+
+msgid "500"
+msgstr "500"
+
+msgid "600"
+msgstr "600"
+
+msgid "700"
+msgstr "700"
+
+msgid "800"
+msgstr "800"
+
+msgid "900"
+msgstr "900"
+
+msgid "Accepts page links and anchors such as #contact."
+msgstr "Oldalhivatkozás és horgony is megadható, például: #contact."
+
+msgid "Accessible label"
+msgstr "Akadálymentesítési címke"
+
+msgid "Alignment"
+msgstr "Igazítás"
+
+msgid "Auto"
+msgstr "Automatikus"
+
+msgid "Blue gradient"
+msgstr "Kék színátmenet"
+
+msgid "Blur"
+msgstr "Elmosás"
+
+msgid "Bold"
+msgstr "Félkövér"
+
+msgid "Border color"
+msgstr "Szegély színe"
+
+msgid "Border style"
+msgstr "Szegély stílusa"
+
+msgid "Border width"
+msgstr "Szegély vastagsága"
+
+msgid "Button"
+msgstr "Gomb"
+
+msgid "Button text"
+msgstr "Gomb felirata"
+
+msgid "Capitalize"
+msgstr "Szavak kezdőbetűje nagy"
+
+msgid "Center"
+msgstr "Középre"
+
+msgid "Choose SVG"
+msgstr "SVG kiválasztása"
+
+msgid "Choose a CSS length, such as 16px or 1rem."
+msgstr "Adjon meg CSS-hosszt, például 16px vagy 1rem."
+
+msgid "Choose icon"
+msgstr "Ikon kiválasztása"
+
+msgid "Close icon picker"
+msgstr "Ikonválasztó bezárása"
+
+msgid "Content"
+msgstr "Tartalom"
+
+msgid "Custom"
+msgstr "Egyéni"
+
+msgid "Custom SVG"
+msgstr "Egyéni SVG"
+
+msgid "Custom shadow"
+msgstr "Egyéni árnyék"
+
+msgid "Custom width"
+msgstr "Egyéni szélesség"
+
+msgid "Dashed"
+msgstr "Szaggatott"
+
+msgid "Design"
+msgstr "Megjelenés"
+
+msgid "Design and icon"
+msgstr "Megjelenés és ikon"
+
+msgid "Desktop"
+msgstr "Asztali"
+
+msgid "Device"
+msgstr "Eszköz"
+
+msgid "Dotted"
+msgstr "Pontozott"
+
+msgid "Double"
+msgstr "Kettős"
+
+msgid "Empty overrides inherit from larger devices and the selected preset. Preview follows the device and state selected here."
+msgstr "Az üres felülbírálások a nagyobb eszközöktől és a kiválasztott előbeállítástól öröklik az értéket. Az előnézet a kiválasztott eszközt és állapotot követi."
+
+msgid "Filled circle"
+msgstr "Kitöltött kör"
+
+msgid "Fit content"
+msgstr "Tartalomhoz igazítás"
+
+msgid "Font Awesome library"
+msgstr "Font Awesome ikonkészlet"
+
+msgid "Font family"
+msgstr "Betűcsalád"
+
+msgid "Font family names, for example Saira, sans-serif. Empty uses the preset."
+msgstr "Betűcsalád neve, például Saira, sans-serif. Üresen hagyva az előbeállítás érvényesül."
+
+msgid "Font size"
+msgstr "Betűméret"
+
+msgid "Font weight"
+msgstr "Betűvastagság"
+
+msgid "Full width"
+msgstr "Teljes szélesség"
+
+msgid "HCars Button"
+msgstr "HCars gomb"
+
+msgid "Horizontal offset"
+msgstr "Vízszintes eltolás"
+
+msgid "Hover"
+msgstr "Hover"
+
+msgid "Hover / keyboard focus"
+msgstr "Hover / billentyűzet-fókusz"
+
+msgid "Hover movement (px)"
+msgstr "Elmozdulás hoverkor (px)"
+
+msgid "Icon"
+msgstr "Ikon"
+
+msgid "Icon background"
+msgstr "Ikon háttere"
+
+msgid "Icon border color"
+msgstr "Ikon szegélyének színe"
+
+msgid "Icon border style"
+msgstr "Ikon szegélyének stílusa"
+
+msgid "Icon border width"
+msgstr "Ikon szegélyének vastagsága"
+
+msgid "Icon color"
+msgstr "Ikon színe"
+
+msgid "Icon container"
+msgstr "Ikontartó"
+
+msgid "Icon container diameter"
+msgstr "Ikontartó átmérője"
+
+msgid "Icon corner radius"
+msgstr "Ikon sarkának lekerekítése"
+
+msgid "Icon hover movement (px)"
+msgstr "Ikon elmozdulása hoverkor (px)"
+
+msgid "Icon library"
+msgstr "Ikonkészlet"
+
+msgid "Icon padding"
+msgstr "Ikon belső margója"
+
+msgid "Icon position"
+msgstr "Ikon pozíciója"
+
+msgid "Icon shadow"
+msgstr "Ikon árnyéka"
+
+msgid "Icon size"
+msgstr "Ikon mérete"
+
+msgid "Icon source"
+msgstr "Ikon forrása"
+
+msgid "Inherited:"
+msgstr "Örökölt:"
+
+msgid "Left"
+msgstr "Balra"
+
+msgid "Letter spacing"
+msgstr "Betűköz"
+
+msgid "Line height"
+msgstr "Sorköz"
+
+msgid "Link URL"
+msgstr "Hivatkozás URL-je"
+
+msgid "Link rel"
+msgstr "Hivatkozás rel attribútuma"
+
+msgid "Link relationship (rel)"
+msgstr "Hivatkozás rel attribútuma"
+
+msgid "Local icon preview"
+msgstr "Ikon helyi előnézete"
+
+msgid "Lowercase"
+msgstr "Kisbetűs"
+
+msgid "Media library (SVG)"
+msgstr "Médiatár (SVG)"
+
+msgid "Mobile — up to 767 px"
+msgstr "Mobil — 767 px-ig"
+
+msgid "None"
+msgstr "Nincs"
+
+msgid "Normal"
+msgstr "Normál"
+
+msgid "Normal and hover styles"
+msgstr "Normál és hover stílus"
+
+msgid "Open in a new tab"
+msgstr "Megnyitás új lapon"
+
+msgid "Open in new tab"
+msgstr "Megnyitás új lapon"
+
+msgid "Optional. Use only when the visible text does not describe the destination."
+msgstr "Nem kötelező. Csak akkor adja meg, ha a látható felirat nem írja le a hivatkozás célját."
+
+msgid "Outline"
+msgstr "Körvonalas"
+
+msgid "Outlined circle"
+msgstr "Kör alakú, körvonalas"
+
+msgid "Padding bottom"
+msgstr "Alsó belső margó"
+
+msgid "Padding left"
+msgstr "Bal oldali belső margó"
+
+msgid "Padding right"
+msgstr "Jobb oldali belső margó"
+
+msgid "Padding top"
+msgstr "Felső belső margó"
+
+msgid "Pill"
+msgstr "Kapszula"
+
+msgid "Play"
+msgstr "Lejátszás"
+
+msgid "Preset"
+msgstr "Előbeállítás"
+
+msgid "Remove SVG"
+msgstr "SVG eltávolítása"
+
+msgid "Replace SVG"
+msgstr "SVG cseréje"
+
+msgid "Reset design overrides"
+msgstr "Megjelenés felülbírálásainak visszaállítása"
+
+msgid "Reset style overrides"
+msgstr "Stílusfelülbírálások visszaállítása"
+
+msgid "Reset styles"
+msgstr "Stílusok visszaállítása"
+
+msgid "Right"
+msgstr "Jobbra"
+
+msgid "SVG icon"
+msgstr "SVG-ikon"
+
+msgid "Search icons"
+msgstr "Ikonok keresése"
+
+msgid "Shadow"
+msgstr "Árnyék"
+
+msgid "Show icon"
+msgstr "Ikon megjelenítése"
+
+msgid "Showing up to 60 matches. Refine the search for more icons."
+msgstr "Legfeljebb 60 találat látható. További ikonokhoz pontosítsa a keresést."
+
+msgid "Solid"
+msgstr "Folytonos"
+
+msgid "Spread"
+msgstr "Kiterjedés"
+
+msgid "State"
+msgstr "Állapot"
+
+msgid "Tablet — up to 1024 px"
+msgstr "Tablet — 1024 px-ig"
+
+msgid "Text / icon spacing"
+msgstr "Szöveg és ikon közötti térköz"
+
+msgid "Text transformation"
+msgstr "Szöveg átalakítása"
+
+msgid "The icon library could not be loaded. Your selected icon is preserved."
+msgstr "Az ikonkészlet nem tölthető be. A kiválasztott ikon megmarad."
+
+msgid "Transition duration (ms)"
+msgstr "Átmenet időtartama (ms)"
+
+msgid "Transparent"
+msgstr "Átlátszó"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Uppercase"
+msgstr "Nagybetűs"
+
+msgid "Use icon container"
+msgstr "Ikontartó használata"
+
+msgid "Use inherited value"
+msgstr "Örökölt érték használata"
+
+msgid "Use the Elementor accent font"
+msgstr "Az Elementor kiemelő betűtípusának használata"
+
+msgid "Variant"
+msgstr "Változat"
+
+msgid "Vertical offset"
+msgstr "Függőleges eltolás"
+
+msgid "Width"
+msgstr "Szélesség"
+
+msgid "Width: auto, 100% or length"
+msgstr "Szélesség: automatikus, 100% vagy megadott érték"
+
+msgid "Use preset / inherit"
+msgstr "Előbeállítás / öröklés használata"
+
+msgid "Three customizable button variants with optional icons."
+msgstr "Három testreszabható gombváltozat, választható ikonokkal."

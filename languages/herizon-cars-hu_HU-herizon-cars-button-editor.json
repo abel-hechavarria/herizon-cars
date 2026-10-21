@@ -1,0 +1,330 @@
+{
+  "domain": "herizon-cars",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "herizon-cars",
+        "lang": "hu_HU",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "100": [
+        "100"
+      ],
+      "200": [
+        "200"
+      ],
+      "300": [
+        "300"
+      ],
+      "400": [
+        "400"
+      ],
+      "500": [
+        "500"
+      ],
+      "600": [
+        "600"
+      ],
+      "700": [
+        "700"
+      ],
+      "800": [
+        "800"
+      ],
+      "900": [
+        "900"
+      ],
+      "Accessible label": [
+        "Akadálymentesítési címke"
+      ],
+      "Alignment": [
+        "Igazítás"
+      ],
+      "Background": [
+        "Háttér"
+      ],
+      "Blue gradient": [
+        "Kék színátmenet"
+      ],
+      "Blur": [
+        "Elmosás"
+      ],
+      "Bold": [
+        "Félkövér"
+      ],
+      "Border color": [
+        "Szegély színe"
+      ],
+      "Border style": [
+        "Szegély stílusa"
+      ],
+      "Border width": [
+        "Szegély vastagsága"
+      ],
+      "Button text": [
+        "Gomb felirata"
+      ],
+      "Capitalize": [
+        "Szavak kezdőbetűje nagy"
+      ],
+      "Center": [
+        "Középre"
+      ],
+      "Choose SVG": [
+        "SVG kiválasztása"
+      ],
+      "Choose a CSS length, such as 16px or 1rem.": [
+        "Adjon meg CSS-hosszt, például 16px vagy 1rem."
+      ],
+      "Choose icon": [
+        "Ikon kiválasztása"
+      ],
+      "Close icon picker": [
+        "Ikonválasztó bezárása"
+      ],
+      "Content": [
+        "Tartalom"
+      ],
+      "Corner radius": [
+        "Sarok lekerekítése"
+      ],
+      "Custom SVG": [
+        "Egyéni SVG"
+      ],
+      "Custom shadow": [
+        "Egyéni árnyék"
+      ],
+      "Custom width": [
+        "Egyéni szélesség"
+      ],
+      "Dashed": [
+        "Szaggatott"
+      ],
+      "Design and icon": [
+        "Megjelenés és ikon"
+      ],
+      "Desktop": [
+        "Asztali"
+      ],
+      "Device": [
+        "Eszköz"
+      ],
+      "Dotted": [
+        "Pontozott"
+      ],
+      "Double": [
+        "Kettős"
+      ],
+      "Empty overrides inherit from larger devices and the selected preset. Preview follows the device and state selected here.": [
+        "Az üres felülbírálások a nagyobb eszközöktől és a kiválasztott előbeállítástól öröklik az értéket. Az előnézet a kiválasztott eszközt és állapotot követi."
+      ],
+      "Filled circle": [
+        "Kitöltött kör"
+      ],
+      "Fit content": [
+        "Tartalomhoz igazítás"
+      ],
+      "Font family": [
+        "Betűcsalád"
+      ],
+      "Font family names, for example Saira, sans-serif. Empty uses the preset.": [
+        "Betűcsalád neve, például Saira, sans-serif. Üresen hagyva az előbeállítás érvényesül."
+      ],
+      "Font size": [
+        "Betűméret"
+      ],
+      "Font weight": [
+        "Betűvastagság"
+      ],
+      "Full width": [
+        "Teljes szélesség"
+      ],
+      "HCars Button": [
+        "HCars gomb"
+      ],
+      "Horizontal offset": [
+        "Vízszintes eltolás"
+      ],
+      "Hover / keyboard focus": [
+        "Hover / billentyűzet-fókusz"
+      ],
+      "Icon background": [
+        "Ikon háttere"
+      ],
+      "Icon border color": [
+        "Ikon szegélyének színe"
+      ],
+      "Icon border style": [
+        "Ikon szegélyének stílusa"
+      ],
+      "Icon border width": [
+        "Ikon szegélyének vastagsága"
+      ],
+      "Icon color": [
+        "Ikon színe"
+      ],
+      "Icon container": [
+        "Ikontartó"
+      ],
+      "Icon container diameter": [
+        "Ikontartó átmérője"
+      ],
+      "Icon corner radius": [
+        "Ikon sarkának lekerekítése"
+      ],
+      "Icon hover movement (px)": [
+        "Ikon elmozdulása hoverkor (px)"
+      ],
+      "Icon library": [
+        "Ikonkészlet"
+      ],
+      "Icon padding": [
+        "Ikon belső margója"
+      ],
+      "Icon position": [
+        "Ikon pozíciója"
+      ],
+      "Icon shadow": [
+        "Ikon árnyéka"
+      ],
+      "Icon size": [
+        "Ikon mérete"
+      ],
+      "Icon source": [
+        "Ikon forrása"
+      ],
+      "Inherited:": [
+        "Örökölt:"
+      ],
+      "Left": [
+        "Balra"
+      ],
+      "Letter spacing": [
+        "Betűköz"
+      ],
+      "Line height": [
+        "Sorköz"
+      ],
+      "Link URL": [
+        "Hivatkozás URL-je"
+      ],
+      "Link relationship (rel)": [
+        "Hivatkozás rel attribútuma"
+      ],
+      "Lowercase": [
+        "Kisbetűs"
+      ],
+      "Mobile — up to 767 px": [
+        "Mobil — 767 px-ig"
+      ],
+      "None": [
+        "Nincs"
+      ],
+      "Normal": [
+        "Normál"
+      ],
+      "Normal and hover styles": [
+        "Normál és hover stílus"
+      ],
+      "Open in a new tab": [
+        "Megnyitás új lapon"
+      ],
+      "Optional. Use only when the visible text does not describe the destination.": [
+        "Nem kötelező. Csak akkor adja meg, ha a látható felirat nem írja le a hivatkozás célját."
+      ],
+      "Outlined circle": [
+        "Kör alakú, körvonalas"
+      ],
+      "Padding bottom": [
+        "Alsó belső margó"
+      ],
+      "Padding left": [
+        "Bal oldali belső margó"
+      ],
+      "Padding right": [
+        "Jobb oldali belső margó"
+      ],
+      "Padding top": [
+        "Felső belső margó"
+      ],
+      "Pill": [
+        "Kapszula"
+      ],
+      "Preset": [
+        "Előbeállítás"
+      ],
+      "Remove SVG": [
+        "SVG eltávolítása"
+      ],
+      "Replace SVG": [
+        "SVG cseréje"
+      ],
+      "Reset design overrides": [
+        "Megjelenés felülbírálásainak visszaállítása"
+      ],
+      "Right": [
+        "Jobbra"
+      ],
+      "Search icons": [
+        "Ikonok keresése"
+      ],
+      "Shadow": [
+        "Árnyék"
+      ],
+      "Show icon": [
+        "Ikon megjelenítése"
+      ],
+      "Showing up to 60 matches. Refine the search for more icons.": [
+        "Legfeljebb 60 találat látható. További ikonokhoz pontosítsa a keresést."
+      ],
+      "Solid": [
+        "Folytonos"
+      ],
+      "Spread": [
+        "Kiterjedés"
+      ],
+      "State": [
+        "Állapot"
+      ],
+      "Tablet — up to 1024 px": [
+        "Tablet — 1024 px-ig"
+      ],
+      "Text": [
+        "Szöveg"
+      ],
+      "Text / icon spacing": [
+        "Szöveg és ikon közötti térköz"
+      ],
+      "Text color": [
+        "Szöveg színe"
+      ],
+      "Text transformation": [
+        "Szöveg átalakítása"
+      ],
+      "The icon library could not be loaded. Your selected icon is preserved.": [
+        "Az ikonkészlet nem tölthető be. A kiválasztott ikon megmarad."
+      ],
+      "Transition duration (ms)": [
+        "Átmenet időtartama (ms)"
+      ],
+      "Transparent": [
+        "Átlátszó"
+      ],
+      "Uppercase": [
+        "Nagybetűs"
+      ],
+      "Use inherited value": [
+        "Örökölt érték használata"
+      ],
+      "Use the Elementor accent font": [
+        "Az Elementor kiemelő betűtípusának használata"
+      ],
+      "Vertical offset": [
+        "Függőleges eltolás"
+      ],
+      "Width: auto, 100% or length": [
+        "Szélesség: automatikus, 100% vagy megadott érték"
+      ]
+    }
+  }
+}

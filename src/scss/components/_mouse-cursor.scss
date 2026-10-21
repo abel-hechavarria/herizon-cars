@@ -1,0 +1,7 @@
+.hc-cursor { position: fixed; top: 0; left: 0; z-index: 99999; display: none; inline-size: .6rem; block-size: .6rem; border-radius: 50%; background: var(--hc-text); mix-blend-mode: difference; pointer-events: none; opacity: 0; transform: translate(-50%, -50%); transition: opacity .4s ease, transform .3s ease; }
+.hc-cursor.is-visible { opacity: 1; }
+.hc-cursor.is-active { opacity: .1; transform: translate(-50%, -50%) scale(8); }
+.hc-cursor-magnetic__target { display: inline-block; pointer-events: none; transition: transform .2s linear; }
+.hc-cursor-pointer { cursor: pointer; }
+@media (hover: hover) and (pointer: fine) and (min-width: 768px) { .hc-cursor:not([hidden]) { display: block; } }
+@media (prefers-reduced-motion: reduce) { .hc-cursor { display: none !important; } .hc-cursor-magnetic__target { transition: none; } }

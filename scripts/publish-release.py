@@ -12,11 +12,9 @@ from release import ROOT, validate_version
 REPO = 'abel-hechavarria/herizon-cars'
 
 
-def gh(*args, optional=False):
+def gh(*args):
     result = subprocess.run(['gh', *args], capture_output=True, text=True, timeout=60)
     if result.returncode:
-        if optional and 'HTTP 404' in result.stderr:
-            return None
         raise RuntimeError('GitHub operation failed: ' + ' '.join(args[:3]))
     return result.stdout
 
@@ -35,13 +33,23 @@ def publish():
     expected_sum = hashlib.sha256(archive.read_bytes()).hexdigest() + '  ' + archive.name + '\n'
     if sums.read_text(encoding='utf-8') != expected_sum:
         raise ValueError('Package checksum differs')
-    route = 'repos/' + REPO + '/releases/tags/' + tag
-    existing = gh('api', route, optional=True)
-    if existing is None:
+    # The by-tag endpoint omits unpublished drafts. The authenticated list includes them.
+    route = 'repos/' + REPO + '/releases?per_page=100'
+    def find_release():
+        releases = json.loads(gh('api', route))
+        if not isinstance(releases, list):
+            raise ValueError('Invalid releases response')
+        matches = [item for item in releases if item.get('tag_name') == tag]
+        if len(matches) > 1:
+            raise ValueError('Multiple releases use the same tag; inspect before retrying')
+        return matches[0] if matches else None
+    data = find_release()
+    if data is None:
         gh('release', 'create', tag, '--repo', REPO, '--verify-tag', '--target', commit,
            '--title', 'Herizon Cars ' + version, '--notes-file', str(notes), '--draft')
-        existing = gh('api', route)
-    data = json.loads(existing)
+        data = find_release()
+    if not isinstance(data, dict):
+        raise ValueError('Draft not found after creation; preserve state and retry')
     if data.get('draft') is not True or data.get('target_commitish') != commit or data.get('tag_name') != tag:
         raise ValueError('Refusing to modify a published release or another commit\'s draft')
     if data.get('body', '').strip() != notes.read_text(encoding='utf-8').strip():

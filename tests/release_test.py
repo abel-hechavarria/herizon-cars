@@ -115,20 +115,20 @@ class PublishTests(unittest.TestCase):
             publisher.publish()
 
     def test_resume_matching_draft(self):
-        with patch.object(publisher, 'gh', return_value=json.dumps(self.data)) as mock:
+        with patch.object(publisher, 'gh', return_value=json.dumps([self.data])) as mock:
             self.run_publish()
         commands = [c.args for c in mock.call_args_list]
         self.assertEqual(sum(c[:2] == ('release', 'upload') for c in commands), 2)
         self.assertEqual(commands[-1][:2], ('release', 'edit'))
 
     def test_initial_draft_created_before_publish(self):
-        with patch.object(publisher, 'gh', side_effect=[None, '', json.dumps(self.data), '', '', '']) as mock:
+        with patch.object(publisher, 'gh', side_effect=['[]', '', json.dumps([self.data]), '', '', '']) as mock:
             self.run_publish()
         self.assertEqual(mock.call_args_list[1].args[:2], ('release', 'create'))
 
     def test_published_or_other_commit_preserved(self):
         for change in [{'draft': False}, {'target_commitish': 'b' * 40}, {'body': 'different'}]:
-            with self.subTest(change=change), patch.object(publisher, 'gh', return_value=json.dumps(self.data | change)) as mock:
+            with self.subTest(change=change), patch.object(publisher, 'gh', return_value=json.dumps([self.data | change])) as mock:
                 with self.assertRaises(ValueError):
                     self.run_publish()
                 self.assertEqual(mock.call_count, 1)
@@ -143,7 +143,7 @@ class PublishTests(unittest.TestCase):
         self.data['assets'] = [{'name': self.archive.name}]
         def call(*args, **kwargs):
             if args[0] == 'api':
-                return json.dumps(self.data)
+                return json.dumps([self.data])
             if args[:2] == ('release', 'download'):
                 (Path(args[-1]) / self.archive.name).write_bytes(b'other-archive')
                 return ''

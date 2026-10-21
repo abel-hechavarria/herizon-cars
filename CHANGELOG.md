@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.2 — 2026-10-21
+
+- Create, upload, verify and publish releases by numeric API IDs, avoiding immediate draft rediscovery.
+- Verify the remote tag commit and downloaded asset hashes before publication; preserve conflicting drafts.
+- Normalize installation archive ordering and platform metadata.
+
 ## 1.2.1 — 2026-10-21
 
 - Discover and resume unpublished release drafts through the authenticated release list; GitHub’s by-tag endpoint omits them.

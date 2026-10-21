@@ -30,11 +30,12 @@ def package():
             if not target.is_relative_to((ROOT / 'dist').resolve()) or not target.is_file():
                 raise ValueError('Missing or invalid compiled asset: ' + name)
     with ZipFile(destination, 'w', ZIP_DEFLATED, compresslevel=9) as archive:
-        for file in sorted(files):
+        for file in sorted(files, key=lambda path: path.relative_to(ROOT).as_posix()):
             if file.is_symlink():
                 raise ValueError('Symlinks cannot be packaged')
             info = ZipInfo('herizon-cars/' + file.relative_to(ROOT).as_posix(), (2026, 1, 1, 0, 0, 0))
             info.compress_type = ZIP_DEFLATED
+            info.create_system = 3  # Stable ZIP metadata on Windows and Linux.
             info.external_attr = 0o100644 << 16
             archive.writestr(info, file.read_bytes(), compresslevel=9)
     digest = hashlib.sha256(destination.read_bytes()).hexdigest()

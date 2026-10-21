@@ -1,4 +1,4 @@
-Herizon Cars 1.2.1
+Herizon Cars 1.2.2
 Requires Hello Elementor, WordPress 6.5+, PHP 8.2+.
 Elementor / Pro remain the content editor. Optional custom widgets register when Elementor is active.
 Configure Appearance > Herizon Cars. Contact channels start empty; the floating CTA stays hidden until configured.

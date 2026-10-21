@@ -57,6 +57,6 @@ The synthetic component demo was checked at 1440, 1024, 768, 767 and 390 px. Var
 
 ## GitHub update delivery (1.2.0)
 
-The update integration adds 108 PHP assertions for stable releases, repository/asset boundaries, requirements, HTTP failures and caching. Twelve Python delivery tests cover synchronized versions, tag mismatch, metadata, ZIP layout, determinism, missing/invalid compiled assets and draft-publication recovery boundaries. The update provider runs only while this theme is active. Customer production installation has not been exercised by this delivery. [Operating instructions](../releasing.md).
+The update integration adds 108 PHP assertions for stable releases, repository/asset boundaries, requirements, HTTP failures and caching. Sixteen Python delivery tests cover synchronized versions, tag mismatch, metadata, ZIP layout, determinism, missing/invalid compiled assets and draft-publication recovery boundaries. The update provider runs only while this theme is active. Customer production installation has not been exercised by this delivery. [Operating instructions](../releasing.md).
 
 On the LocalWP runtime, `wp_update_themes()` accepted a controlled future-release fixture as a native `herizon-cars` update with version, package and requirements. The original update caches were restored afterwards; no theme files were installed by this test. Real release readback is checked separately from the fixture.

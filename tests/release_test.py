@@ -51,7 +51,7 @@ class DeliveryTests(unittest.TestCase):
 
     def test_mismatched_source_version(self):
         source = self.root / 'style.css'
-        source.write_text(source.read_text().replace('Version: 1.2.0', 'Version: 1.2.1'))
+        source.write_text(source.read_text().replace('Version: ' + release.validate_version(), 'Version: 0.0.0'))
         with self.assertRaises(ValueError):
             release.validate_version()
 

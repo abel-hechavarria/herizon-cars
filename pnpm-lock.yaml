@@ -18,6 +18,9 @@ importers:
       '@fortawesome/fontawesome-free':
         specifier: 6.7.2
         version: 6.7.2
+      esbuild:
+        specifier: 0.28.2
+        version: 0.28.2
       sass:
         specifier: 1.105.1
         version: 1.105.1

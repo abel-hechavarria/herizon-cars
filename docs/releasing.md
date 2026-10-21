@@ -13,6 +13,8 @@ Commits record development. A **stable GitHub Release with the installation ZIP*
 
 Use a topic branch and pull request when a review is useful. Source commits alone do not announce a customer update.
 
+On the LocalWP development checkout, maintain the theme through Git and the build commands. Do not use WordPress's theme installer/updater on that same folder: an installation replaces it with the runtime ZIP and may remove development files, including Git metadata. Use a separate disposable site for installation tests.
+
 ## Publish an installable version
 
 1. Choose a new stable `X.Y.Z`. Update `package.json`, `style.css`, `inc/bootstrap.php` and the first line of `readme.txt` together. Add its entry in `CHANGELOG.md`; update WordPress/PHP requirement headers if necessary.

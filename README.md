@@ -19,7 +19,8 @@ The brief: keep content editable in Elementor while giving the website a maintai
 | Area | Implementation |
 |---|---|
 | Theme architecture | Hello Elementor child theme; a small bootstrap and explicit modules with settings and execution conditions. |
-| Editing experience | Four native Elementor widgets: HCars Button, logo marquee, text marquee and expandable gallery. A separate API v3 Gutenberg button block. |
+| Editing experience | Five native Elementor widgets: HCars Button, HCars Process, logo marquee, text marquee and expandable gallery. A separate API v3 Gutenberg button block. |
+| Import form demo | Scoped enhancements for an existing native Elementor Pro form, including two steps, validation and summary. Sending and storage remain blocked. [Integration contract](docs/import-form.md). |
 | Shared component system | Three button variants, one PHP renderer, one SCSS component and a generated design contract. Normal/hover states, responsive overrides, SVG icons and explicit style reset. |
 | Frontend behavior | Optional preloader, decorative cursor, smooth scrolling, back-to-top and configurable contact panel, coordinated through a shared runtime. |
 | Defensive integration | Capability checks, validated settings, context-aware execution, typed CSS values, SVG sanitization and conservative upload handling. |

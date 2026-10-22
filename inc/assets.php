@@ -29,7 +29,7 @@ function herizon_cars_entry_css(string $entry, array $seen = []): array {
 
 function herizon_cars_register_assets(): void {
     $manifest = herizon_cars_manifest();
-    foreach (['herizon-cars-main' => 'src/js/main.js', 'herizon-cars-widgets' => 'src/js/widgets.js', 'herizon-cars-button-editor' => 'src/js/button-editor.jsx', 'herizon-cars-button-elementor' => 'src/js/button-elementor.js'] as $handle => $entry) {
+    foreach (['herizon-cars-main' => 'src/js/main.js', 'herizon-cars-widgets' => 'src/js/widgets.js', 'herizon-cars-button-editor' => 'src/js/button-editor.jsx', 'herizon-cars-button-elementor' => 'src/js/button-elementor.js', 'herizon-cars-import-form' => 'src/js/import-form.js'] as $handle => $entry) {
         $url = herizon_cars_asset_url((string) ($manifest[$entry]['file'] ?? ''));
         $deps = $handle === 'herizon-cars-button-editor' ? ['wp-blocks', 'wp-element', 'wp-block-editor', 'wp-components', 'wp-i18n', 'wp-data', 'wp-core-data'] : ($handle === 'herizon-cars-button-elementor' ? ['jquery', 'elementor-editor'] : []);
         if ($url) {
@@ -37,7 +37,7 @@ function herizon_cars_register_assets(): void {
             if (in_array($handle, ['herizon-cars-button-editor', 'herizon-cars-button-elementor'], true)) { wp_set_script_translations($handle, 'herizon-cars', HERIZON_CARS_PATH . 'languages'); }
         }
     }
-    foreach (['herizon-cars-main' => 'src/js/main.js', 'herizon-cars-widgets' => 'src/scss/widgets.scss', 'herizon-cars-button' => 'src/scss/button.scss'] as $handle => $entry) {
+    foreach (['herizon-cars-main' => 'src/js/main.js', 'herizon-cars-widgets' => 'src/scss/widgets.scss', 'herizon-cars-button' => 'src/scss/button.scss', 'herizon-cars-process' => 'src/scss/process.scss', 'herizon-cars-import-form' => 'src/scss/import-form.scss'] as $handle => $entry) {
         $dependencies = [];
         foreach (herizon_cars_entry_css($entry) as $index => $css) {
             $url = herizon_cars_asset_url($css);
@@ -65,7 +65,7 @@ function herizon_cars_kit_background(): string {
 }
 
 add_filter('script_loader_tag', static function (string $tag, string $handle): string {
-    if (!in_array($handle, ['herizon-cars-main', 'herizon-cars-widgets', 'herizon-cars-button-editor', 'herizon-cars-button-elementor'], true)) { return $tag; }
+    if (!in_array($handle, ['herizon-cars-main', 'herizon-cars-widgets', 'herizon-cars-button-editor', 'herizon-cars-button-elementor', 'herizon-cars-import-form'], true)) { return $tag; }
     $processor = new WP_HTML_Tag_Processor($tag);
     // WordPress includes inline configuration tags before the external script.
     // Mark only the external entry; leave configuration synchronous and intact.
@@ -94,7 +94,7 @@ add_action('wp_enqueue_scripts', static function (): void {
 add_action('admin_notices', static function (): void {
     if (!current_user_can('manage_options')) { return; }
     $manifest = herizon_cars_manifest();
-    foreach (['src/js/main.js', 'src/js/widgets.js', 'src/scss/widgets.scss', 'src/js/button-editor.jsx', 'src/js/button-elementor.js', 'src/scss/button.scss'] as $entry) {
+    foreach (['src/js/main.js', 'src/js/widgets.js', 'src/scss/widgets.scss', 'src/js/button-editor.jsx', 'src/js/button-elementor.js', 'src/scss/button.scss', 'src/scss/process.scss'] as $entry) {
         if (!herizon_cars_asset_url((string) ($manifest[$entry]['file'] ?? ''))) {
             echo '<div class="notice notice-error"><p>' . esc_html__('Herizon Cars: compiled assets are missing. Run pnpm build before delivery.', 'herizon-cars') . '</p></div>';
             break;

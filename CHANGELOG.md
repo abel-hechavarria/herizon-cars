@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 — Unreleased
+
+- Add HCars Process, a native Elementor section with editable copy, background/overlays, ordered diagonal image cards and shared HCars Button styles.
+- Include per-card overrides, responsive layout controls and Hungarian interface translations; no new frontend JavaScript.
+- Add scoped enhancements for a native two-step Elementor Pro vehicle-import form: optional vehicle criteria, model suggestions, a live summary and contact validation.
+- Keep the import form in demo mode: client-side interception and server-side validation prevent email, submissions storage and other submit actions. No page template or delivery activation is included.
+
 ## 1.2.2 — 2026-10-21
 
 - Create, upload, verify and publish releases by numeric API IDs, avoiding immediate draft rediscovery.

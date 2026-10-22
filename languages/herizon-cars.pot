@@ -726,3 +726,243 @@ msgstr ""
 # HCars Button strings maintained by button-translations.py
 msgid "Three customizable button variants with optional icons."
 msgstr ""
+
+# HCars Process
+msgid "Background image appearance"
+msgstr ""
+
+# HCars Process
+msgid "Background image position"
+msgstr ""
+
+# HCars Process
+msgid "Background image width"
+msgstr ""
+
+# HCars Process
+msgid "Bottom"
+msgstr ""
+
+# HCars Process
+msgid "Button URL"
+msgstr ""
+
+# HCars Process
+msgid "Button variant"
+msgstr ""
+
+# HCars Process
+msgid "Card background"
+msgstr ""
+
+# HCars Process
+msgid "Card background color"
+msgstr ""
+
+# HCars Process
+msgid "Card columns"
+msgstr ""
+
+# HCars Process
+msgid "Card content padding"
+msgstr ""
+
+# HCars Process
+msgid "Card corner radius"
+msgstr ""
+
+# HCars Process
+msgid "Card minimum height"
+msgstr ""
+
+# HCars Process
+msgid "Card overlay"
+msgstr ""
+
+# HCars Process
+msgid "Card spacing"
+msgstr ""
+
+# HCars Process
+msgid "Content and cards layout"
+msgstr ""
+
+# HCars Process
+msgid "Content to cards spacing"
+msgstr ""
+
+# HCars Process
+msgid "Copy maximum width"
+msgstr ""
+
+# HCars Process
+msgid "Copy width"
+msgstr ""
+
+# HCars Process
+msgid "Csak gondosan ellenőrzött autókat ajánlok."
+msgstr ""
+
+# HCars Process
+msgid "Description"
+msgstr ""
+
+# HCars Process
+msgid "Description color"
+msgstr ""
+
+# HCars Process
+msgid "Diagonal cut"
+msgstr ""
+
+# HCars Process
+msgid "Egyedi keresés"
+msgstr ""
+
+# HCars Process
+msgid "Eyebrow"
+msgstr ""
+
+# HCars Process
+msgid "HCars Process"
+msgstr ""
+
+# HCars Process
+msgid "Image alternative text"
+msgstr ""
+
+# HCars Process
+msgid "Image overlay"
+msgstr ""
+
+# HCars Process
+msgid "Image position"
+msgstr ""
+
+# HCars Process
+msgid "Inherit"
+msgstr ""
+
+# HCars Process
+msgid "Kiválasztás"
+msgstr ""
+
+# HCars Process
+msgid "Lépésről lépésre\na megfelelő autóig."
+msgstr ""
+
+# HCars Process
+msgid "Minimum height"
+msgstr ""
+
+# HCars Process
+msgid "Number (blank uses order)"
+msgstr ""
+
+# HCars Process
+msgid "Number color"
+msgstr ""
+
+# HCars Process
+msgid "Németországból, a te igényeidre szabva."
+msgstr ""
+
+# HCars Process
+msgid "Nézd meg a folyamatot."
+msgstr ""
+
+# HCars Process
+msgid "Open card link in new tab"
+msgstr ""
+
+# HCars Process
+msgid "Optional card URL"
+msgstr ""
+
+# HCars Process
+msgid "Overlay color"
+msgstr ""
+
+# HCars Process
+msgid "Section background and cards"
+msgstr ""
+
+# HCars Process
+msgid "Section background color"
+msgstr ""
+
+# HCars Process
+msgid "Section background image"
+msgstr ""
+
+# HCars Process
+msgid "Section horizontal padding"
+msgstr ""
+
+# HCars Process
+msgid "Section vertical padding"
+msgstr ""
+
+# HCars Process
+msgid "Show button"
+msgstr ""
+
+# HCars Process
+msgid "Side by side"
+msgstr ""
+
+# HCars Process
+msgid "Stacked"
+msgstr ""
+
+# HCars Process
+msgid "Step description"
+msgstr ""
+
+# HCars Process
+msgid "Step number"
+msgstr ""
+
+# HCars Process
+msgid "Step title"
+msgstr ""
+
+# HCars Process
+msgid "Steps"
+msgstr ""
+
+# HCars Process
+msgid "Személyes segítség, tapasztalat és megbízható források – hogy te nyugodtan élvezhesd a következő autódat."
+msgstr ""
+
+# HCars Process
+msgid "Title"
+msgstr ""
+
+# HCars Process
+msgid "Title HTML tag"
+msgstr ""
+
+# HCars Process
+msgid "Title color"
+msgstr ""
+
+# HCars Process
+msgid "Top"
+msgstr ""
+
+# HCars Process
+msgid "Végigkísérlek a teljes folyamaton."
+msgstr ""
+
+# HCars Process
+msgid "color"
+msgstr ""
+
+# HCars Process
+msgid "Átadás"
+msgstr ""
+
+# HCars Process
+msgid "Így dolgozom"
+msgstr ""

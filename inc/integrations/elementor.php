@@ -11,6 +11,7 @@ add_action('elementor/widgets/register', static function ($manager): void {
         'text-marquee' => 'Herizon_Cars_Widget_Text_Marquee',
         'elegant-gallery' => 'Herizon_Cars_Widget_Elegant_Gallery',
         'button' => 'Herizon_Cars_Widget_Button',
+        'process' => 'Herizon_Cars_Widget_Process',
     ] as $file => $class) {
         require_once __DIR__ . '/../widgets/class-widget-' . $file . '.php';
         $manager->register(new $class());

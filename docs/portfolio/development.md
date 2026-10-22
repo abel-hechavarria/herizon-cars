@@ -55,3 +55,11 @@ This writes demo files without creating or updating WordPress content. Hashed as
 ## Maintenance boundaries
 
 Administrative SVG/SVGZ/JSON support rejects invalid input or missing dependencies. SVGZ is bounded and normalized to SVG. Image-size rules do not remove existing image files. Disabling native site-icon output does not supply a replacement favicon. Configure these options for the destination site instead of assuming they suit every project.
+
+## HCars Process
+
+The native `herizon-process` widget adds an editable background/copy/CTA section with ordered diagonal image cards. It uses independent component CSS and the shared button renderer, with no new frontend script. [Configuration and frontend contract](../process-widget.md).
+
+## Import form demo
+
+The theme enhances an existing native Elementor Pro form identified as `hc_import_request`. It does not create or publish a page. The integration always rejects submission before Elementor runs delivery/storage actions. [Required markup, behavior and demo limits](../import-form.md).

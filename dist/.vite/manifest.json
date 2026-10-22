@@ -40,6 +40,12 @@
     "src": "src/js/button-elementor.js",
     "isEntry": true
   },
+  "src/js/import-form.js": {
+    "file": "assets/import-form-BbVME-Gz.js",
+    "name": "import-form",
+    "src": "src/js/import-form.js",
+    "isEntry": true
+  },
   "src/js/main.js": {
     "file": "assets/main-BJdwp3E-.js",
     "name": "main",
@@ -118,6 +124,24 @@
     "name": "button-styles",
     "names": [
       "button-styles.css"
+    ]
+  },
+  "src/scss/import-form.scss": {
+    "file": "assets/import-form-styles-1Dtt2Qdg.css",
+    "src": "src/scss/import-form.scss",
+    "isEntry": true,
+    "name": "import-form-styles",
+    "names": [
+      "import-form-styles.css"
+    ]
+  },
+  "src/scss/process.scss": {
+    "file": "assets/process-styles-34F9ONAV.css",
+    "src": "src/scss/process.scss",
+    "isEntry": true,
+    "name": "process-styles",
+    "names": [
+      "process-styles.css"
     ]
   },
   "src/scss/widgets.scss": {

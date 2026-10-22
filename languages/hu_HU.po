@@ -600,3 +600,183 @@ msgstr "Előbeállítás / öröklés használata"
 
 msgid "Three customizable button variants with optional icons."
 msgstr "Három testreszabható gombváltozat, választható ikonokkal."
+
+msgid "Background image appearance"
+msgstr "Háttérkép megjelenése"
+
+msgid "Background image position"
+msgstr "Háttérkép helyzete"
+
+msgid "Background image width"
+msgstr "Háttérkép szélessége"
+
+msgid "Bottom"
+msgstr "Alul"
+
+msgid "Button URL"
+msgstr "Gomb hivatkozása"
+
+msgid "Button variant"
+msgstr "Gombváltozat"
+
+msgid "Card background"
+msgstr "Kártya háttere"
+
+msgid "Card background color"
+msgstr "Kártya háttérszíne"
+
+msgid "Card columns"
+msgstr "Kártyaoszlopok"
+
+msgid "Card content padding"
+msgstr "Kártya belső térköze"
+
+msgid "Card corner radius"
+msgstr "Kártyasarkok lekerekítése"
+
+msgid "Card minimum height"
+msgstr "Kártya minimális magassága"
+
+msgid "Card overlay"
+msgstr "Kártya fedőrétege"
+
+msgid "Card spacing"
+msgstr "Kártyák közötti térköz"
+
+msgid "Content and cards layout"
+msgstr "Tartalom és kártyák elrendezése"
+
+msgid "Content to cards spacing"
+msgstr "Tartalom és kártyák közötti térköz"
+
+msgid "Copy maximum width"
+msgstr "Szöveg maximális szélessége"
+
+msgid "Copy width"
+msgstr "Szövegoszlop szélessége"
+
+msgid "Csak gondosan ellenőrzött autókat ajánlok."
+msgstr "Csak gondosan ellenőrzött autókat ajánlok."
+
+msgid "Description"
+msgstr "Leírás"
+
+msgid "Description color"
+msgstr "Leírás színe"
+
+msgid "Diagonal cut"
+msgstr "Átlós vágás"
+
+msgid "Egyedi keresés"
+msgstr "Egyedi keresés"
+
+msgid "Eyebrow"
+msgstr "Felső címke"
+
+msgid "HCars Process"
+msgstr "HCars Process"
+
+msgid "Image alternative text"
+msgstr "Kép helyettesítő szövege"
+
+msgid "Image overlay"
+msgstr "Kép fedőrétege"
+
+msgid "Image position"
+msgstr "Kép helyzete"
+
+msgid "Inherit"
+msgstr "Öröklés"
+
+msgid "Kiválasztás"
+msgstr "Kiválasztás"
+
+msgid "Lépésről lépésre\na megfelelő autóig."
+msgstr "Lépésről lépésre\na megfelelő autóig."
+
+msgid "Minimum height"
+msgstr "Minimális magasság"
+
+msgid "Number (blank uses order)"
+msgstr "Sorszám (üresen automatikus)"
+
+msgid "Number color"
+msgstr "Sorszám színe"
+
+msgid "Németországból, a te igényeidre szabva."
+msgstr "Németországból, a te igényeidre szabva."
+
+msgid "Nézd meg a folyamatot."
+msgstr "Nézd meg a folyamatot."
+
+msgid "Open card link in new tab"
+msgstr "Kártyahivatkozás megnyitása új lapon"
+
+msgid "Optional card URL"
+msgstr "Kártya hivatkozása (opcionális)"
+
+msgid "Overlay color"
+msgstr "Fedőréteg színe"
+
+msgid "Section background and cards"
+msgstr "Szakasz háttere és kártyák"
+
+msgid "Section background color"
+msgstr "Szakasz háttérszíne"
+
+msgid "Section background image"
+msgstr "Szakasz háttérképe"
+
+msgid "Section horizontal padding"
+msgstr "Szakasz vízszintes belső térköze"
+
+msgid "Section vertical padding"
+msgstr "Szakasz függőleges belső térköze"
+
+msgid "Show button"
+msgstr "Gomb megjelenítése"
+
+msgid "Side by side"
+msgstr "Egymás mellett"
+
+msgid "Stacked"
+msgstr "Egymás alatt"
+
+msgid "Step description"
+msgstr "Lépés leírása"
+
+msgid "Step number"
+msgstr "Lépés sorszáma"
+
+msgid "Step title"
+msgstr "Lépés címe"
+
+msgid "Steps"
+msgstr "Lépések"
+
+msgid "Személyes segítség, tapasztalat és megbízható források – hogy te nyugodtan élvezhesd a következő autódat."
+msgstr "Személyes segítség, tapasztalat és megbízható források – hogy te nyugodtan élvezhesd a következő autódat."
+
+msgid "Title"
+msgstr "Cím"
+
+msgid "Title HTML tag"
+msgstr "Cím HTML-címkéje"
+
+msgid "Title color"
+msgstr "Cím színe"
+
+msgid "Top"
+msgstr "Felül"
+
+msgid "Végigkísérlek a teljes folyamaton."
+msgstr "Végigkísérlek a teljes folyamaton."
+
+msgid "color"
+msgstr "színe"
+
+msgid "Átadás"
+msgstr "Átadás"
+
+msgid "Így dolgozom"
+msgstr "Így dolgozom"

@@ -1,0 +1,190 @@
+// HCars Process: server-rendered, isolated styles; no animation runtime required.
+.hc-process {
+  --hc-process-card-bg: #090b0c;
+  --hc-process-cut: 28px;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: var(--hc-process-min-height, 320px);
+  padding: var(--hc-process-padding, 20px);
+  overflow: hidden;
+  background: var(--hc-process-background, #101010);
+  color: var(--hc-process-description-color, #c3c6ca);
+  font-family: var(--e-global-typography-text-font-family, sans-serif);
+  line-height: 1.45;
+  text-align: start;
+  width: 100%;
+
+  &, *, *::before, *::after { box-sizing: border-box; }
+  :where(h1, h2, h3, h4, h5, h6, p, ol) { margin: 0; }
+  :where(h1, h2, h3, h4, h5, h6) { text-transform: none; }
+  &__background, &__overlay { position: absolute; inset: 0; pointer-events: none; z-index: -1; }
+  &__background {
+    width: var(--hc-process-background-width, 74%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__background-image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(0, var(--hc-process-copy-width, 56%)) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--hc-process-gap, 24px);
+    width: 100%;
+    min-width: 0;
+  }
+  &__overlay {
+    background: var(--hc-process-overlay, linear-gradient(90deg, rgba(0, 0, 0, .86) 0%, rgba(0, 0, 0, .2) 43%, rgba(0, 0, 0, .08) 57%, #101010 80%));
+  }
+  &__content {
+    min-width: 0;
+    width: 100%;
+    max-width: var(--hc-process-copy-max-width, 390px);
+    position: relative;
+    z-index: 1;
+  }
+  &__eyebrow {
+    color: var(--hc-process-eyebrow-color, #fff);
+    font-family: var(--e-global-typography-accent-font-family, inherit);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-block-end: var(--hc-process-eyebrow-gap, 12px);
+  }
+  &__title {
+    color: var(--hc-process-title-color, #fff);
+    font-family: var(--e-global-typography-secondary-font-family, Georgia, serif);
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 400;
+    line-height: 1.06;
+    letter-spacing: -.025em;
+    overflow-wrap: anywhere;
+    margin-block-end: var(--hc-process-title-gap, 14px);
+  }
+  &__description {
+    color: var(--hc-process-description-color, #c3c6ca);
+    font-size: 15px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+  &__cta { margin-block-start: var(--hc-process-button-gap, 16px); }
+  &__cta .hc-button-wrap { max-width: 100%; }
+  &__cta .hc-button { max-width: 100%; }
+  &__cta .hc-button__label { white-space: normal; overflow-wrap: anywhere; }
+  &__steps {
+    display: grid;
+    grid-template-columns: repeat(var(--hc-process-columns, 3), minmax(0, 1fr));
+    align-items: stretch;
+    gap: var(--hc-process-gap-cards, 10px);
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+  }
+  &__step { min-width: 0; margin: 0; padding: 0; }
+  &__card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    min-height: var(--hc-process-card-min-height, 270px);
+    background: var(--hc-process-card-bg);
+    border-radius: var(--hc-process-card-radius, 6px);
+    border: var(--hc-process-card-border-width, 0) solid var(--hc-process-card-border-color, transparent);
+    box-shadow: var(--hc-process-card-shadow, none);
+    clip-path: polygon(min(var(--hc-process-cut), 35%) 0, 100% 0, calc(100% - min(var(--hc-process-cut), 35%)) 100%, 0 100%);
+    overflow: hidden;
+  }
+  &__image, &__card-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  &__media { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+  img.hc-process__image {
+    display: block;
+    max-width: none;
+    object-fit: cover;
+    object-position: var(--hc-process-image-position, center);
+    border: 0;
+    border-radius: 0;
+  }
+  &__card-overlay { background: linear-gradient(180deg, rgba(0, 0, 0, .03) 4%, rgba(0, 0, 0, .32) 38%, rgba(0, 0, 0, .95) 82%, #000); }
+  &__card-content {
+    position: relative;
+    min-width: 0;
+    padding: var(--hc-process-card-padding, 20px);
+    margin-inline: calc(var(--hc-process-cut) * .22);
+    overflow-wrap: anywhere;
+  }
+  &__number {
+    display: block;
+    color: var(--hc-process-number-color, rgba(255, 255, 255, .2));
+    font-family: var(--e-global-typography-text-font-family, sans-serif);
+    font-size: 60px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: -.035em;
+    margin-block-end: var(--hc-process-number-gap, 8px);
+  }
+  &__step-title {
+    color: var(--hc-process-step-title-color, #fff);
+    font-family: var(--e-global-typography-text-font-family, sans-serif);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: normal;
+    margin-block-end: var(--hc-process-step-title-gap, 8px);
+  }
+  &__step-description {
+    color: var(--hc-process-step-description-color, #a5aab2);
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  &__card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 1;
+    min-height: inherit;
+    color: inherit;
+    text-decoration: none;
+  }
+  &__card-link:hover, &__card-link:focus-visible { color: inherit; text-decoration: none; }
+  &__card:has(&__card-link:focus-visible) {
+    // The outer card is clipped; an inset outline stays visible inside the diagonal.
+    outline: 3px solid var(--hc-process-focus-color, #86b7fa);
+    outline-offset: -8px;
+  }
+  &__card-link:focus-visible { outline: 2px solid var(--hc-process-focus-color, #86b7fa); outline-offset: -8px; }
+}
+
+// Safe defaults without generated Elementor CSS; its native responsive rules take precedence.
+@media (max-width: 1024px) {
+  .hc-process {
+    &__inner { grid-template-columns: minmax(0, 1fr); }
+    &__background { width: var(--hc-process-background-width, 100%); }
+    &__content { max-width: var(--hc-process-copy-max-width, 560px); }
+  }
+}
+@media (max-width: 767px) {
+  .hc-process {
+    --hc-process-cut: 0px;
+    &__steps { grid-template-columns: repeat(var(--hc-process-columns, 1), minmax(0, 1fr)); }
+    &__card { min-height: var(--hc-process-card-min-height, 230px); }
+    &__title { font-size: 30px; }
+    &__number { font-size: 54px; }
+  }
+}

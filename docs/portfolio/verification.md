@@ -1,5 +1,17 @@
 # Verification
 
+## Source checks for the 1.3.0 development snapshot
+
+On 2026-10-22, the source publication checks passed with a frozen pnpm install,
+PHP/JavaScript syntax checks, the PHP suites (including 26 HCars Process and 26
+import-form assertions), 10 JavaScript tests, 16 Python release tests and a Vite
+build. Vite retains the existing large editor-icon chunk warning. These checks
+do not publish a stable release or install an update on a customer site.
+
+The following sections retain the scope and evidence of the earlier recorded
+delivery. They are not a claim that every earlier browser scenario was rerun
+for the source publication.
+
 This summary covers the recorded local delivery checks for theme version 1.1.0, including HCars Button and the subsequent logo-marquee adjustment. It distinguishes source-level tests from checks made inside WordPress; it does not represent a production rollout.
 
 ## Automated checks and reproduction
